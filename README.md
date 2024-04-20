@@ -24,11 +24,11 @@ IDE - IntelliJ IDEA
 
 Variaveis
 
-- não pode ser uma palavra cave
+- não pode ser uma palavra chave
 - case sensive
 - não pode começar com numero
 
-- kotlin aceita undescore para aceitar compreenção.
+- kotlin aceita undescore para compreenção.
 
 
 
