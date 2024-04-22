@@ -22,6 +22,8 @@ IDE - IntelliJ IDEA
 
 --------------------
 
+Nivelamento de Código - Kotlin
+
 Variaveis
 
 - não pode ser uma palavra chave
@@ -30,8 +32,36 @@ Variaveis
 
 - kotlin aceita undescore para compreenção.
 
+VAR x VAL 
+
+ambas querem dizer variaveis
+
+VAR - Mutável
+
+VAL - Imutável 
 
 
+CONST x VAL
+
+Const - Tempo de compilação
+
+VAL - Tempo de Execução
+
+Você pode Ter uma const val: Isso é uma constante em tempo de compilação
+(mais na frente isso vai fazer sentido)
+
+Obs: as variáveis precisam ser inicializadas
+
+Função main
+(slide)
+
+operadores
+(slide)
+
+comentários
+(slide)
+
+24 27
 -----------------
 <!--
 Ideia de Aplicativo
