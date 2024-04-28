@@ -29,7 +29,24 @@ Realizaremos aulas síncronas toda semana para apresentação de conceitos bási
 
 As atividades em sala e em casa, assim como a participação do aluno em sala, comporão as notas juntamente com o projeto final da disciplina.
 
+- Apresentação + Nivelamento Kotlin
+- Nivelamento Kotlin
+- IDE Android & Activity layouts / widgets
+- Lifecycle & Intents
+- Data management
+- Background processing
+- Permissions & Broadcast Receivers
+- Notifications
+- Services & WorkManager
+- Internet connection
+- Debugging
 
+Referências
+
+- Hardy, Brian, and Bill Phillips. Android programming: the big nerd ranch guide. Addison-Wesley Professional, 2013.
+- Murphy, Mark L. The busy coder's guide to Android development. United States: CommonsWare, 2008., 2008.
+- Jemerov, Dmitry, and Svetlana Isakova. Kotlin in action. Simon and Schuster, 2017.
+- https://kotlinlang.org
 
 
 intends - são intensões que tem no android para requisitar certas funções: camera, calendário. você pode passar e receber informações de uma intend para outra.
