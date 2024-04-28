@@ -1,5 +1,16 @@
 # Aula01
 
+## Motivação
+
+- Motivação
+- Formato das aulas
+- Calendário
+- Nivelamento Kotlin
+  - Variáveis
+  - Operadores
+  - Hello world
+- Bibliografia
+
 
 intends - são intensões que tem no android para requisitar certas funções: camera, calendário. você pode passar e receber informações de uma intend para outra.
 
