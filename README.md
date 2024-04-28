@@ -4,6 +4,27 @@ Ementa:
 
 Este curso tem como objetivo dar uma introdução ao desenvolvimento de aplicações móveis utilizando a plataforma Android.
 
+Abordagem:
+
+Será visto aspectos da linguagem de programação (Kotlin ou Java), ciclo de vida, criação de UI/layouts, banco de dados, threads, notificações etc.
+
+Objetivos:
+
+- Motivar, apresentar, exercitar e consolidar o desenvolvimento de aplicações para dispositivos móveis, utilizando a plataforma Android
+
+- Estudar e desenvolver vários aplicativos simples no decorrer da disciplina para exercitar diferentes conceitos da plataforma
+
+- Desenvolver um aplicativo como projeto da disciplina e usá-lo como estudo de caso
+
+- Compreender organização, padrões e mecanismos de programação da plataforma Android e estar apto a usá-los efetivamente para desenvolver sua própria aplicação
+Usar ferramentas de desenvolvimento para criar, entender, depurar e otimizar aplicações Android
+
+- Compreender as características distintas e restrições que existem em dispositivos móveis e lidar com isto no contexto de aplicações Android
+
+- Estar apto a encontrar fontes adicionais de informação para entender e resolver problemas relacionados com desenvolvimento Android
+
+
+
 
 intends - são intensões que tem no android para requisitar certas funções: camera, calendário. você pode passar e receber informações de uma intend para outra.
 
