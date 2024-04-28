@@ -23,6 +23,12 @@ Usar ferramentas de desenvolvimento para criar, entender, depurar e otimizar apl
 
 - Estar apto a encontrar fontes adicionais de informação para entender e resolver problemas relacionados com desenvolvimento Android
 
+Metodologia:
+
+Realizaremos aulas síncronas toda semana para apresentação de conceitos básicos e tirar dúvidas. Adicionalmente, teremos exercícios de programação a serem feitos em sala de aula e em casa e um projeto para encerrar a disciplina.
+
+As atividades em sala e em casa, assim como a participação do aluno em sala, comporão as notas juntamente com o projeto final da disciplina.
+
 
 
 
