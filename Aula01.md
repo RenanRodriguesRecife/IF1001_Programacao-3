@@ -96,3 +96,11 @@ Reflexões:
 7:33
 --->
 ------------------------
+
+
+
+Operador Elvis
+
+lista x spt
+
+spt só aceita valores únicos
