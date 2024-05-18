@@ -11,6 +11,52 @@
   - Hello world
 - Bibliografia
 
+- Atividade: Instalar o IntelliJ - (https://www.jetbrains.com/idea/)
+
+## Kotlin
+
+### Variáveis
+
+- Nomes são **case-sensitive** (number não é o mesmo que Number, a mesma letras maiúscula e minúsculas são tratadas como letras diferentes)
+
+- Cada nome pode incluir apenas **letras, dígitos, e underscores** (carácter de sublinhado _)
+
+- Um nome **não pode começar com um dígito**
+
+- Um nome **não pode ser uma palavra chave**(por exemplo, val, var, fun são ilegais)
+
+- Variáveis
+  - Char…….: caracter
+  - String….: texto
+  - Byte.……: -128 … 127
+  - Short…..: -32768 … 32767
+  - Int.………: -2_147_483_648 … 2_147_483_647
+  - Long.……: -9_223_372_036_854_775_808 … 9_223_372_036_854_775_807
+  - Float……: 7 casas decimais
+  - Double..: 15 casa decimais
+  - Boolean: true, false
+
+- kotlin aceita undescore para compreenção.
+
+
+### VAR x VAL 
+
+ambas querem dizer variaveis
+
+VAR - Mutável
+
+VAL - Imutável 
+
+
+### CONST x VAL
+
+Const - Tempo de compilação
+
+VAL - Tempo de Execução
+
+
+
+
 
 intends - são intensões que tem no android para requisitar certas funções: camera, calendário. você pode passar e receber informações de uma intend para outra.
 
@@ -36,28 +82,7 @@ IDE - IntelliJ IDEA
 
 Nivelamento de Código - Kotlin
 
-Variaveis
 
-- não pode ser uma palavra chave
-- case sensive
-- não pode começar com numero
-
-- kotlin aceita undescore para compreenção.
-
-VAR x VAL 
-
-ambas querem dizer variaveis
-
-VAR - Mutável
-
-VAL - Imutável 
-
-
-CONST x VAL
-
-Const - Tempo de compilação
-
-VAL - Tempo de Execução
 
 Você pode Ter uma const val: Isso é uma constante em tempo de compilação
 (mais na frente isso vai fazer sentido)
