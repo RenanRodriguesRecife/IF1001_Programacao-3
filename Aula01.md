@@ -141,7 +141,7 @@ Operadores
 %=
 ```
 
-
+<img src=".assets/10.JPG">
 
 
 
