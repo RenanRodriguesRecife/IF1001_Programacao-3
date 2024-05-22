@@ -141,27 +141,7 @@ Operadores
 %=
 ```
 
-Declare a variable (var) count of type Int and initializes it to 88
 
-Declares a variable named temperature of type Double and initialize it to 14.3
-
-Declare a variable letter of type Char and initialize it to X
-
-Declare a variable named isCSAwesome of type Boolean and initialize it to true
-
-Declare a variable digit and initialize it to the character 'B'
-
-Declare a variable named airTemperature and initialize it to 78.8
-
-Declare a variable score and initialize it to 99
-
-Declare a variable named semesterHasStarted and initialize it to true
-
-Increment score by 1 then by 50
-
-Transform airTemperature to Celsius using this formula: (FahrenheitTemp - 32) * 5/9 
-
-Transform temperature to Fahrenheit using this formula: (CelsiusTemp * 9/5) + 32
 
 
 
