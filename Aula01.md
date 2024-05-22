@@ -11,6 +11,16 @@
   - Hello world
 - Bibliografia
 
+<img src=".assets/01.JPG">
+
+<img src=".assets/02.JPG">
+
+<img src=".assets/03.JPG">
+
+<img src=".assets/04.JPG">
+
+<img src=".assets/05.JPG">
+
 - Atividade: Instalar o IntelliJ - (https://www.jetbrains.com/idea/)
 
 ## Kotlin
