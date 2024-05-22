@@ -162,6 +162,10 @@ fun main() {
 }
 ```
 
+- Funções
+
+<img src=".assets/11.JPG">
+  
 
 
 
