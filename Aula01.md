@@ -143,7 +143,24 @@ Operadores
 
 <img src=".assets/10.JPG">
 
-
+```kotlin
+fun main() {
+    var count: Int = 88
+    var temperature: Double = 14.3
+    var x: Char = 'x'
+    var isCSAwesome: Boolean = true
+    var digit = 'B'
+    var airTemperature = 78.8
+    var score = 99
+    var semesterHasStarted = true
+    
+    score++
+    score+=50
+    println(score)
+   	println((airTemperature - 32)*5/9)
+    println((temperature*9/6)+32)
+}
+```
 
 
 
