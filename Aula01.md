@@ -35,7 +35,6 @@
 
 - Atividade: Instalar o IntelliJ - (https://www.jetbrains.com/idea/)
 
-
 ## Kotlin
 
 ### Variáveis
@@ -69,6 +68,14 @@ ambas querem dizer variaveis
 VAR - Mutável
 
 VAL - Imutável 
+
+
+### CONST x VAL
+
+Const - Tempo de compilação
+
+VAL - Tempo de Execução
+
 
 ```kotlin
 fun main(){
@@ -118,12 +125,22 @@ fun main(){
 }
 ```
 
+Operadores
++
+-
+/
+*
+%
+++
+--
++=
+-=
+/=
+*=
+%=
 
-### CONST x VAL
 
-Const - Tempo de compilação
 
-VAL - Tempo de Execução
 
 
 
