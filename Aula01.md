@@ -87,6 +87,38 @@ fun main(){
   println("x = $x")
 ```
 
+```kotlin
+fun main(){
+  var e: Int // 1
+  println(e)
+}
+```
+- Variavel 'e' deve ser inicializada
+
+```kotlin
+fun main(){
+  val immutable = "immutable"
+  immutable = "blah"
+}
+```
+- Val não pode ser revalorado
+
+```kotlin
+fun someCondition() = true
+
+fun main(){
+  val d: Int
+
+  if(someCondition()){
+    d = 1
+  }else{
+    d = 2
+  }
+  println(d) 
+}
+```
+
+
 ### CONST x VAL
 
 Const - Tempo de compilação
