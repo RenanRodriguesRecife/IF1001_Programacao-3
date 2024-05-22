@@ -70,6 +70,22 @@ VAR - Mutável
 
 VAL - Imutável 
 
+```kotlin
+fun main(){
+  val a: Int = 1
+  val b = 2
+  val c: Int
+  c = 3
+  println("a = $a,b = $b, c = $c")
+}
+```
+
+```kotlin
+fun main(){
+  var x = 5
+  x += 1
+  println("x = $x")
+```
 
 ### CONST x VAL
 
