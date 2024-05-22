@@ -21,7 +21,20 @@
 
 <img src=".assets/05.JPG">
 
+## Android
+
+<img src=".assets/06.JPG">
+
+<img src=".assets/07.JPG">
+
+<img src=".assets/08.JPG">
+
+<img src=".assets/09.JPG">
+
+- Atividade: Falar um pocuo sobre você e uma ideia de aplicativo
+
 - Atividade: Instalar o IntelliJ - (https://www.jetbrains.com/idea/)
+
 
 ## Kotlin
 
