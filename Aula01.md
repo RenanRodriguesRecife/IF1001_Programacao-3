@@ -177,6 +177,9 @@ fun main() {
 }
 fun birtydayGreeting(){
 
+```
+
+```kotlin
 }
 fun main(){
   birthdayGreentin()
@@ -189,6 +192,30 @@ fun birthdayGreeting{
 
 <img src=".assets/12.JPG">
 
+```kotlin
+fun main(){
+  birthdayGreeting()
+}
+
+fun birthdayGreeting(): Unit {
+  println("Happy Birthday, Rover!")
+  println("You are now 5 years old!")
+}
+```
+
+```kotlin
+
+fun birthdayGreeting(): String{
+  val nameGreeting = "Happy Birthday, Rover!"
+  val ageGreeting = "You are now 5 years old!"
+  return "$nameGreeting\n$ageGreeting"
+}
+
+fun main(){
+  val greeting = birthdayGreeting()
+  println(greeting)
+}
+```
 
 
 intends - são intensões que tem no android para requisitar certas funções: camera, calendário. você pode passar e receber informações de uma intend para outra.
