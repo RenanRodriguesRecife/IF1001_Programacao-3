@@ -505,7 +505,7 @@ myLabel@ for (item in items){
 }
 ```
 
-## rage
+## range
 
 ```kotlin
 
@@ -528,6 +528,22 @@ for (x in 9 downTo 0 step 3){
 ```kotlin
 val notNullText: String = "Definitely not null"
 val nullableText1: String? = "Might be null"
+val nullableText2: String? = null
+val nullableInt2: Int? = null
 
+fun funny(text:String?){
+  if(text !== null)
+    println(text)
+  else
+    println("Nothing to print :(")
+}
 
+fun funnier(text:String?){
+  val toPrint = text?: "Nothing to print :("
+  println(toPrint)
+}
 ```
+
+### Elvis Operator ?:
+
+
