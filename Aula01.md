@@ -425,7 +425,9 @@ for (item in items){
 }
 ```
 apple
+
 banana
+
 kiwifruit
 
 
@@ -438,7 +440,9 @@ for (index in items.indices){
 ```
 
 item at 0 is apple
+
 item at 1 is banana
+
 item at 2 is kiwifruit
 
 
