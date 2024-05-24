@@ -236,7 +236,20 @@ Criar uma função para converter uma temperatura em Celsius em Fahrenheit e vic
   - Função deve mostrar o resultado na tela
   - Função deve ser chamada pelo main
 
-``
+```kotlin
+fun celsFahr(temp: Double){
+    println((temp * 9/5)+32)
+}
+
+fun fahrCels(temp: Double){
+    println((temp -32 )*5/9)
+}
+
+fun main() {
+    celsFahr(40.0)
+    fahrCels(200.0)
+}
+```
 
 
 intends - são intensões que tem no android para requisitar certas funções: camera, calendário. você pode passar e receber informações de uma intend para outra.
