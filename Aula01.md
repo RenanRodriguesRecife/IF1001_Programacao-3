@@ -445,5 +445,89 @@ item at 1 is banana
 
 item at 2 is kiwifruit
 
+```kotlin
+val items = listOf("apple", "banana", "kiwifruit")
+
+for ((index, item) in items.withIndex()) {
+    println("item at $index is $item")
+}
+```
+
+item at 0 is apple
+
+item at 1 is banana
+
+item at 2 is kiwifruit
 
 
+```kotlin
+val items = listOf("apple", "banana", "kiwifruit")
+
+var index = 0
+while (index < items.size) {
+    println("item at $index is ${items[index]}")
+    index++
+}
+
+```
+
+item at 0 is apple
+
+item at 1 is banana
+
+item at 2 is kiwifruit
+
+```kotlin
+val items = listOf("apple", "banana", "kiwifruit")
+
+var index = 0
+do {
+    println("item at $index is ${items[index]}")
+    index++
+} while(index < items.size)
+```
+
+item at 0 is apple
+
+item at 1 is banana
+
+item at 2 is kiwifruit
+
+## loops
+
+```kotlin
+
+myLabel@ for (item in items){
+  for (anotherItem in otherItems{
+    if(...) break@myLabel
+    else continue@myLabel
+ }
+}
+```
+
+## rage
+
+```kotlin
+
+val x = 10
+if(x in 1..10){
+  println("fits in range")
+}
+
+for(x in 1..5){
+  print(x)
+}
+
+for (x in 9 downTo 0 step 3){
+  print(x)
+}
+```
+
+## Nullable
+
+```kotlin
+val notNullText: String = "Definitely not null"
+val nullableText1: String? = "Might be null"
+
+
+```
