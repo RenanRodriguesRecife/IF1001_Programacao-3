@@ -334,3 +334,112 @@ Operador Elvis
 lista x spt
 
 spt só aceita valores únicos
+
+
+----------------------------------------------------------------------
+Part 2
+
+Nivelamento Kotlin
+
+- if
+
+- when
+
+- loops
+
+- range
+
+- nullable
+
+- classes
+
+## IF
+
+```kotlin
+
+fun maxOf(a: Int, b: Int): Int{
+  if(a > b){
+    return a
+  }else{
+    return b
+  }
+}
+
+fun maxOf(a: Int, b: Int) =
+  if (a > b){
+    a
+  }else{
+    b
+  }
+
+fun maxOf(a: Int, b: Int) = if (a > b) a else b
+
+```
+
+## when
+
+```kotlin
+when(x) {
+  1 -> print("x == 1")
+  2 -> print("x == 2")
+  else -> {
+    print("x is neither 1 nor 2")
+  }
+}
+
+when{
+  x < 0 -> print("x < 0")
+  x > 0 -> print("x > 0")
+  else -> {
+    print("x == 0")
+  }
+}
+```
+
+when qual retorno?
+
+```kotlin
+
+fun usingWhen(x: Int): Int{
+  var xx = x
+  when(xx) {
+    1 -> return ++xx
+    2 -> return --xx
+    else->{
+      return xx
+    }
+}
+}
+```
+Se o valor de entrada for 1 a função retorna 2 (int)
+Se o valor de entrada for 2 a função retorna 1 (int)
+Se for qualquer outra valor retorna o mesmo número
+
+## loops
+
+```kotlin
+val items = listOf("apple", "banana", "kiwifruit")
+
+for (item in items){
+  println(item)
+}
+```
+apple
+banana
+kiwifruit
+
+
+```kotlin
+val items = listOf("apple", "banana", "kiwifruit")
+
+for (index in items.indices){
+  println("item at $index is ${item[index]}")
+}
+```
+
+item at 0 is apple
+item at 1 is banana
+item at 2 is kiwifruit
+
+
+
