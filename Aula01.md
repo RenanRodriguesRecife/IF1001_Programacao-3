@@ -251,6 +251,21 @@ fun main() {
 }
 ```
 
+----------------------------
+
+Atividade
+
+Criar uma função para converter uma temperatura em Celsius em Fahrenheit e vice-versa
+  - Função deve ter 1 parâmetro de entrada
+  - Função deve ter um retorno
+  - Resultado da função deve ser armazenada em uma variável quando chamada
+  - Função deve ser chamada pelo main
+
+```kotlin
+
+
+```
+
 
 intends - são intensões que tem no android para requisitar certas funções: camera, calendário. você pode passar e receber informações de uma intend para outra.
 
