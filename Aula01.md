@@ -262,8 +262,21 @@ Criar uma função para converter uma temperatura em Celsius em Fahrenheit e vic
   - Função deve ser chamada pelo main
 
 ```kotlin
+fun celsFahr(temp: Double): Double{
+    return ((temp * 9/5) + 32)
+}
 
+fun fahrCels(temp: Double): Double{
+    return ((temp - 32) * 5/9)
+}
 
+fun main() {
+    var celsius = celsFahr(40.0)
+    var fahr = fahrCels(200.0)
+    
+    println(celsius.toString())
+    println(fahr.toString())
+}
 ```
 
 
