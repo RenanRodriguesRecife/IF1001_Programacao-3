@@ -219,6 +219,26 @@ fun main(){
 
 <img src=".assets/13.JPG">
 
+```kotlin
+
+fun birthdayGreeting(name: String): String{
+  val nameGreeting = "Happy Birhday, $name!"
+  val ageGreeting = "You are now 5 years old!"
+  return "$nameGreeting/n$ageGreeting"
+}
+```
+---------------------
+
+Atividade 
+
+Criar uma função para converter uma temperatura em Celsius em Fahrenheit e vice-versa
+  - Função de ter 1 parâmetro de entrada
+  - Função deve mostrar o resultado na tela
+  - Função deve ser chamada pelo main
+
+``
+
+
 intends - são intensões que tem no android para requisitar certas funções: camera, calendário. você pode passar e receber informações de uma intend para outra.
 
 data management - banco de dados, persitências
