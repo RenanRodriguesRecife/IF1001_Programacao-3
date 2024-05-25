@@ -721,7 +721,7 @@ class RangeRegulator(
 
 Atividade
 
-- In the **SmartDivice** class, define a **printDeviceInfo()** method tha prints a **"Device name: $name, category: $category, type: $deviceType"** string.
+- In the **SmartDivice** class, define a **printDeviceInfo()** method that prints a **"Device name: $name, category: $category, type: $deviceType"** string.
 
 - In the **SmartTvDevice** class, define a **decreaseVolume()** method that devrease the volume and a **previousChannel()** method tha navigates to previous channel
 
