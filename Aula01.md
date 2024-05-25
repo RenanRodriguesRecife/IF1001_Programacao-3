@@ -609,4 +609,11 @@ Set - não registra repetidos
 
 ## Class
 
+<img src=".assets/15.JPG">
+
+<img src=".assets/16.JPG">
+
+<img src=".assets/17.JPG">
+
+<img src=".assets/18.JPG">
 
