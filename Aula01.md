@@ -544,6 +544,21 @@ fun funnier(text:String?){
 }
 ```
 
-### Elvis Operator ?:
+### Elvis Operator ?:  (Operador ternário)
 
+```kotlin
 
+  val notNullText: String = "Definitely not null"
+  val nullableText1: String? = "Might be null"
+  val nullableText2: String? = null
+
+  fun funny(text: String?){
+    if (text !== null)
+      println(text)
+    else
+      println("Nothing to print :(")
+    }
+
+  fun funnier(text: String?){
+    val toPint = text ?: "Nothing to print :("
+    println(toPrint)
