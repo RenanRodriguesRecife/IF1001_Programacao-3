@@ -675,3 +675,16 @@ Kotlin provides four visibility modifiers
 
 <img src=".assets/19.JPG">
 
+### Get and Set
+
+When you don't define the getter and setter function for a property, Kotlin compiler internally creates the functions.
+
+```kotlin
+
+var speakerVolume = 2
+
+get() = field
+set(value){
+  field =value
+}
+```
