@@ -562,3 +562,51 @@ fun funnier(text:String?){
   fun funnier(text: String?){
     val toPint = text ?: "Nothing to print :("
     println(toPrint)
+```
+
+## Collection
+
+<img src=".assets/14.JPG">
+
+## List, Set, Map
+
+```kotlin
+
+  fun printAll(string: Collection<String>){
+    for(s in string) print("$s ")
+    println()
+  }
+
+  fun main(){
+    val stringList = listOf("one", "two","one")
+    printAll(stringList)
+    val stringSet = setOf("one", "two","three","three")
+    printAll(stringSet)
+}
+```
+
+Set - não registra repetidos
+
+```kotlin
+
+  val bob = Person("Bob",31)
+  val people = listOf(Person("Adam",20),bob,bob)
+  val people2 = listOf(Person("Adam",20),Person("Bob",31),bob)
+  println(people == people2)
+  bob.age = 32
+  println(people == people2)
+```
+
+```kotlin
+  val numbersMap = mapOf("key1" to 1, "key2" to 2, "key3" to 3, "key4" to 1)
+
+  println("All keys: ${numbersMap.keys}")
+  println("All values: ${numbersMap.values}")
+  if("key2" in numbersMap) println("Value by key\"key2\":${numbersMap["key2"]}")
+  if(1 in numbersMap.values) println("The value 1 is in the map")
+  if(numbersMap.containsValue(1)) println("The value 1 is in the map") //same as previous
+```
+
+## Class
+
+
