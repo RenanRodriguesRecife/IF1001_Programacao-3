@@ -644,5 +644,34 @@ Set - não registra repetidos
 
 ```kotlin
 
+open class MyParentClass(){
+    val x = 3
+}
 
+//subclass
+class MyChildClass:MyParentClass(){
+    fun myFunction(){
+        println(x)
+    }
+}
+
+fun main(){
+  var myObj = MyChildClass()
+  myObj.myFunction()
+}
 ```
+
+### Class open vs public
+
+Kotlin provides four visibility modifiers
+
+- public. Default visibility modifier. Makes the declaration accessible everywhere. The properties and methods that you want used outside the class are marked as public
+
+- private. Makes the declaration accessible in the same class or source file.
+
+- protected. Makes the declaration accessible in subclasses. The properties and methods that you want used in the class that defines them and the subclasses are marked with the protected visibility modifier.
+
+- internal. Makes the declaration accessible in the same module. The internal modifier is similar to private, but you can access internal properties and methods from outside the class as long as it's being accessed in the same module.
+
+
+
