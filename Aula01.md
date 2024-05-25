@@ -617,3 +617,32 @@ Set - não registra repetidos
 
 <img src=".assets/18.JPG">
 
+```kotlin
+
+  class SmartDevice(val name: String, val category: String){
+    var deviceStatus = "online"
+
+    constructor(name: String, category: String, statusCode: Int): this(name,category{ deviceStatus = when(statusCode){
+      0 -> "offline"
+      1 -> "online"
+      else -> "unknown"
+}
+}
+```
+
+### Class - Atividade
+
+- Criar uma classe MyParentClass que uma val x = 3
+  
+- Criar uma classe MyChildClass
+  
+- MyChildClass herda de MyParentClass
+  
+- Criar uma função myFuncion em MyChildClass que faz um println de x
+  
+- Criar instancia de MyChildClass na função main e chamar my Function
+
+```kotlin
+
+
+```
