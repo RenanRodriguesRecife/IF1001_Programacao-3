@@ -673,5 +673,5 @@ Kotlin provides four visibility modifiers
 
 - internal. Makes the declaration accessible in the same module. The internal modifier is similar to private, but you can access internal properties and methods from outside the class as long as it's being accessed in the same module.
 
-
+<img src=".assets/19.JPG">
 
