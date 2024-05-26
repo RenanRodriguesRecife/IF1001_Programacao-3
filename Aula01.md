@@ -723,7 +723,7 @@ Atividade
 
 - In the **SmartDivice** class, define a **printDeviceInfo()** method that prints a **"Device name: $name, category: $category, type: $deviceType"** string.
 
-- In the **SmartTvDevice** class, define a **decreaseVolume()** method that decrease the volume and a **previousChannel()** method tha navigates to previous channel
+- In the **SmartTvDevice** class, define a **decreaseVolume()** method that decrease the volume and a **previousChannel()** method that navigates to previous channel
 
 - In the **SmartLightDevice** class, define a **decreaseBrightness()** method that decreases the brightness
 
