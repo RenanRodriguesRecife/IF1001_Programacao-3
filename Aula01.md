@@ -737,4 +737,71 @@ After you're done with the implementation:
 
 - In the **main()** function, call these added methods to test them.
 
+```kotlin
 
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+
+open class SmartDevice(var name: String, var category: String, var deviceType: String){
+    var deviceStatus = "on"
+    
+    fun printDeviceInfo(){
+        println("Device name: $name,category: $category,type:$deviceType")
+    }
+}
+
+class SmartTvDevice(name: String, category: String,deviceType:String):SmartDevice(name, category,deviceType){
+    
+    var volume: Int = 30
+    var channel: Int = 13
+    
+    fun decreaseVolume(){
+        --volume
+    }
+    
+    fun previousChannel(){
+        --channel
+    }
+}
+
+class SmartLightDevice(name: String, category: String,deviceType:String):SmartDevice(name, category,deviceType){
+    
+    var brightness = 30
+    
+    fun decreaseBrightness(){
+        --brightness
+    }
+}
+
+class SmartHome(){
+    var deviceTurnOnCount = 0
+    
+    fun decreaseTvVolume(){
+        
+    }
+    
+    fun changeTvChannelToPrevious(){
+        
+    }
+    
+    fun printSmartTvInfo(){
+        
+    }
+    
+    fun printSmartLightInfo(){
+        
+    }
+    
+    fun decreaseLightBrightness(){
+        
+    }
+    
+}
+
+fun main() {
+    var device = SmartDevice("tv","tv","tv")
+    device.printDeviceInfo()
+}
+```
