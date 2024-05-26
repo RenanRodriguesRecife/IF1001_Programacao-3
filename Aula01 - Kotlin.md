@@ -739,36 +739,53 @@ After you're done with the implementation:
 
 ```kotlin
 
-/**
- * You can edit, run, and share this code.
- * play.kotlinlang.org
- */
 
-open class SmartDevice(var name: String, var category: String, var deviceType: String){
+open class SmartDevice{
+    open var name: String = ""
+    open var category: String = ""
+    var deviceType: String = ""
     var deviceStatus = "on"
+    
+    constructor(name:String, category:String){
+        this.name = name
+        this.category = category
+    }
     
     fun printDeviceInfo(){
         println("Device name: $name,category: $category,type:$deviceType")
     }
 }
 
-class SmartTvDevice(name: String, category: String,deviceType:String):SmartDevice(name, category,deviceType){
+class SmartTvDevice:SmartDevice{
     
     var volume: Int = 30
     var channel: Int = 13
     
+ 
+    constructor(name: String, category: String):super(name,category){
+        deviceType = "TV"
+    }
+    
+    
     fun decreaseVolume(){
         --volume
+        println(volume)
     }
     
     fun previousChannel(){
         --channel
+        println(channel)
     }
 }
 
-class SmartLightDevice(name: String, category: String,deviceType:String):SmartDevice(name, category,deviceType){
+class SmartLightDevice:SmartDevice{
     
     var brightness = 30
+    
+    constructor(name: String, category: String):super(name,category){
+        deviceType = "Light"
+    }
+    
     
     fun decreaseBrightness(){
         --brightness
@@ -777,7 +794,24 @@ class SmartLightDevice(name: String, category: String,deviceType:String):SmartDe
 
 class SmartHome(){
     var deviceTurnOnCount = 0
+    var deviceList = mutableListOf<Any>()
     
+    //add
+    fun addTV(name: String, category: String){
+        var device = SmartTvDevice(name,category)
+        device.printDeviceInfo()
+        deviceList.add(device)
+        println()
+    }
+    
+    fun addLight(name: String, category: String){
+        var device = SmartLightDevice(name,category)
+        device.printDeviceInfo()
+        deviceList.add(device)
+        println(deviceList)
+    }
+    
+    //TV
     fun decreaseTvVolume(){
         
     }
@@ -790,6 +824,8 @@ class SmartHome(){
         
     }
     
+    
+    //Light
     fun printSmartLightInfo(){
         
     }
@@ -801,7 +837,9 @@ class SmartHome(){
 }
 
 fun main() {
-    var device = SmartDevice("tv","tv","tv")
-    device.printDeviceInfo()
+    var home = SmartHome()
+    home.addTV("crt29","sala")
+    home.addLight("luzNegra","sala")
 }
+
 ```
