@@ -1,4 +1,4 @@
-![image](https://github.com/RenanRodriguesRecife/IF1001_Programacao-3/assets/14836999/6fb390bd-9cac-4b77-9514-a21c7a50b761)## Layout
+## Layout
 
 - **Layout** define a **estrutura** de uma **interface** do usuário no seu app
 - Possui hierarquia de objetos **View** e **ViewGroup**
