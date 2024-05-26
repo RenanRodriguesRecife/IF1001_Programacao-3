@@ -19,11 +19,11 @@
  
 - Arquivo xml de layout são salvos no diretório res/layout
 
-<img src=".assets/35.jpg">
+<img src=".assets/36.jpg">
 
-<img src=".assets/35.jpg">
+<img src=".assets/37.jpg">
 
-<img src=".assets/35.jpg">
+<img src=".assets/38.jpg">
 
 ### Viewgroups
 
@@ -33,28 +33,28 @@
 - **FrameLayout**: é um placeholder que é usado para mostrar um única view ou stack de views
 - **ConstraintLayout**: alinha as views com base em regras
 
-<img src=".assets/35.jpg">
+<img src=".assets/39.jpg">
 
 ## Linearlayout
 
 LinearLayout é um ViewGroup que alinha todos os filhos em um única direção vertical ou horizontal
 
-<img src=".assets/35.jpg">
+<img src=".assets/40.jpg">
 
 ### Linearlayout Attributes
 
-<img src=".assets/35.jpg">
+<img src=".assets/41.jpg">
 
-<img src=".assets/35.jpg">
+<img src=".assets/42.jpg">
 
-<img src=".assets/35.jpg">
+<img src=".assets/43.jpg">
 
-<img src=".assets/35.jpg">
+<img src=".assets/44.jpg">
 
-<img src=".assets/35.jpg">
+<img src=".assets/45.jpg">
 
-<img src=".assets/35.jpg">
+<img src=".assets/46.jpg">
 
 ### Linearlayouts - Atividade
 
-<img src=".assets/35.jpg">
+<img src=".assets/47.jpg">
