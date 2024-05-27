@@ -80,3 +80,43 @@ Tablelayout é um ViewGroup que exibe elementos filhos de View em linhas e colun
 <img src=".assets/53.jpg">
 
 <img src=".assets/54.jpg">
+
+## Framelayout
+
+- Framelayout foi criado para bloquear uma parte da tela para mostrar múltiplas views como uma só. As views são desenhadas em forma de stack de forma que uma sobrepõe a outra
+
+- Pode-se usar layout_gravity para posicionar as view
+
+<img src=".assets/55.jpg">
+
+<img src=".assets/56.jpg">
+
+## Constraintlayout
+
+- Constraint significa algo como "restrição" ou "limitação"
+
+- O ConstraintLayout permite que você crie layouts grandes e complexos com uma hierarquia flat no seu XML (sem a necessidade de ficar alinhando um monte de layouts uns dentro dos outros).
+
+- Ele é similar ao Reletivelayout, uma vez que todas suas views se relacionam entre si e com o parent
+
+<img src=".assets/57.jpg">
+
+<img src=".assets/58.jpg">
+
+<img src=".assets/59.jpg">
+
+<img src=".assets/60.jpg">
+
+<img src=".assets/61.jpg">
+
+### Referências
+
+- https://developer.android.com
+- livros:
+  Pro Android UI wallace Jackson
+
+  Android UI Fundamentals develop and design - jason Ostrander
+
+  Android UI Design Plan, design, and build engaging user interfaces for your Android applications - Jassica Thornsby
+
+
