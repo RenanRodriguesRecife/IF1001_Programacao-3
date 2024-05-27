@@ -8,3 +8,77 @@
 <img src=".assets/93.JPG">
 
 <img src=".assets/94.jpg">
+
+## Intent - startActivity
+
+- É utilizado para **chamar outra activity**
+- Só tem **um argumento** que é uma intent
+
+```kotlin
+val intent = Intent(AlarmClock.ACTION_SET_TIMER).apply{
+  putExtra(AlarmClock.EXTRA_MESSAGE, "Programação 3")
+  putExtra(AlarmClock.EXTRA_LENGTH, 3)
+  putExtra(AlarmClock.EXTRA_SKIP_UI, true)
+}
+
+if(intent.resolveActivity(packageManager)!= null){
+  startActivity(intent)
+}
+```
+
+- Podemos enviar dados para outra activity
+
+```kotlin
+val intent = Intent(AlarmClock.ACTION_SET_ALARM).apply{
+  putExtra(AlarmClock.EXTRA_MESSAGE, "Programação 3")
+  putExtra(AlarmClock.EXTRA_HOUR, 19)
+  putExtra(AlarmClock.EXTRA_MINUTES, 0)
+}
+
+if(intent.resolveActivity(packageManager)!= null){
+  startActivity(intent)
+}
+```
+
+## Intent -startActivity -> resolveActivity
+
+- Uma exception é lançada quando o sistema não encontra uma activity ou ação
+  -  Por isso é boa prática utilizar o resolveActivity
+ 
+```kotlin
+val intent = Intent(AlarmClock.ACTION_SET_ALARM).apply{
+  putExtra(AlarmClock.EXTRA_MESSAGE, "Programação 3")
+  putExtra(AlarmClock.EXTRA_HOUR, 19)
+  putExtra(AlarmClock.EXTRA_MINUTES, 0)
+}
+
+// resolveActicity
+if(intent.resolveActivity(packageManager)!= null){
+  startActivity(intent)
+}
+```  
+
+## Intent Implícitas
+
+- Não especifica um componente específico. Isso quer dizer que **qualquer aplicativo** pode **realizar uma ação** desde que esteja **habilitado** para esta função.
+- Tipos de ações comuns
+  - Criar um despertador
+  - Criar um timer
+  - Exibir todos os alarmes
+  - Adicionar um evento à agenda
+  - Capturar uma imagem ou um vídeo e retorná-lo
+  - Selecionar um contato
+  - Recuperar um tipo específico de arquivo
+  - Exibir um local em um mapa
+  - Reproduzir um arquivo de mídia
+  - Iniciar uma chamada telefônica
+  - Carregar um URL da Web
+
+## Intent Implícitas - Criar um despertador
+
+- Atividade
+  - Criar um aplicativo com um botão com o seguinte código no método onClick() -> when()
+ 
+```kotlin
+
+```
