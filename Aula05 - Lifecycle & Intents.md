@@ -1,4 +1,4 @@
-# Lifecycle & Intents
+# Lifecycle
 
 - Lifecycle
 - Callback
