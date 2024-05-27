@@ -228,3 +228,6 @@ Atividade
   - onCreate(); onStart(); onResume(); onStop(); onDestroy(); onRestart()
 - Adicione um Log.d("test",[nome do método]) em cada método
 - Vá para o logcat e procure pela tag "test"
+
+
+<img src=".assets/92.JPG">
