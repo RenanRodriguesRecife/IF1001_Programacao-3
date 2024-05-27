@@ -116,3 +116,11 @@ class CameraComponent : LifecycleObserver{
   ...
 }
 ```
+
+## onPause()
+
+- Sistema chama esse método como o primeiro indício de que o usuário está **saindo da atividade**
+  - Nem sempre significa que a atividade vai ser destruída
+ 
+- Indica que a atividade **não está mais em primeiro plano**, mas ainda está visível se o usuário estiver no modo de várias janelas
+  - Enquanto a atividade estiver parcialmente visível, mais 
