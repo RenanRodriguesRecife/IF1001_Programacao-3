@@ -5,4 +5,4 @@
 - Um **objeto de mensagens** que pode ser usado para **solicitar uma ação** de **outro componente** do app ou chamar **outra atividade**
 - Uma Intent pode ser **explícita** ou **implícita**
 
-<img src=".assets/93.jpg">
+<img src=".assets/93.\JPG">
