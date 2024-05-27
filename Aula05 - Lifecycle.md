@@ -88,3 +88,31 @@ override fun onStart(){
  
 ```kotlin
 
+override fun onResume(){
+  super.onResume()
+  
+  val year = calendar.get(Calendar.YEAR)
+  val month = calendar.get(Calendar.MONTH)
+  val day = calendar.get(Calendar.DAY_OF_MONTH)
+
+  val hour = calendar.get(Calendar.HOUR_OF_DAY)
+  val minute = calendar.get(Calendar.MINUTE)
+  val second = calendar.get(Calendar.SECOND)
+
+  Log.d(LOG_MSG, "onResume() " + day + "/" + month + "/" + year + " " + hour + ":" + minute + ":" + second)
+}
+```
+
+```kotlin
+
+class CameraComponent : LifecycleObserver{
+  ...
+  @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
+  fun initializeCamera(){
+    if(camera == null){
+      getCamera()
+    }
+  }
+  ...
+}
+```
