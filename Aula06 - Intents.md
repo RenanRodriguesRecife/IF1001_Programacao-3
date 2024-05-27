@@ -6,3 +6,5 @@
 - Uma Intent pode ser **explícita** ou **implícita**
 
 <img src=".assets/93.JPG">
+
+<img src=".assets/94.jpg">
