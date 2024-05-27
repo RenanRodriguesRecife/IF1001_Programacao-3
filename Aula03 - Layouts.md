@@ -58,3 +58,17 @@ LinearLayout é um ViewGroup que alinha todos os filhos em um única direção v
 ### Linearlayouts - Atividade
 
 <img src=".assets/47.jpg">
+
+## Relativelayout
+
+RelativeLayout é um ViewGroup que exibe visualizações dos seus filhos em posições relativas a elementos irmãos (i.e, a esquerda ou abeixo de outra view) ou relativas a área RelativeLayout pai (por exemplo, alinhado à parte inferior, à esquerda ou no centro)
+
+<img src=".assets/48.jpg">
+
+<img src=".assets/49.jpg">
+
+<img src=".assets/50.jpg">
+
+<img src=".assets/51.jpg">
+
+
