@@ -75,4 +75,16 @@ override fun onStart(){
 
 - Essa chamada torna a **atividade visível para o usuário** enquanto o app se prepara para que a **atividade entre em primeiro plano** e se torne **interativa**.
 
-<img src=".assets/93.jpg">
+## onResume()
+
+- É nesse estado que o aplicativo interage com o usuário
+- Permenece nesse estado até
+
+  - Receber uma ligação
+ 
+  - Navegar para outra atividade
+ 
+  - Desligar tela/dispositivo
+ 
+```kotlin
+
