@@ -161,3 +161,70 @@ class CameraComponent : LifecycleObserver{
     - Recomendado **liberar ou ajustar recursos que não são necessários** enquanto o app não estiver visível
 - Atividade entra no estado "Interrompido", o objeto Activity é mantido na memória e mantém todas as informações de estado e dos membros
 
+## onDestroy()
+
+Chamado antes de a atividade ser **destruída**
+- A atividade está sendo concluída porque o usuário **descartou completamente a atividade** ou porque **finish() está sendo chamado** na atividade.
+
+- O sistema está destruindo temporariamente a atividade devido a uma **mudança na configuração**, como a rotação do dispositivo ou a entrada no **modo de váiras janelas**
+
+
+```kotlin
+
+override fun onDestroy(){
+  super.onDestroy()
+
+  val year = calendar.get(Calendar.YEAR)
+  val month = calendar.get(Calendar.MONTH)
+  val day = calendar.get(Calendar.DAY_OF_MONTH)
+
+  val hour = calendar.get(Calendar.HOUR_OF_DAY)
+  val minute = calendar.get(Calendar.MINUTE)
+  val second = calendar.get(Calendar.SECOND)
+
+```
+
+PS.: onDestroy()
+
+- Pode-se usar um objeto ViewModel para conter os dados de visualização relevantes para a Activity. Se a Activity for recriada devido a uma mudança de configuração, a ViewModel não precisará fazer nada, já que será preservada e fornecida à próxima instância do Activity
+
+```kotlin
+
+class UserActivity:CompenentActivity{
+  private val viewModel by viewModels<UserViewModel>()
+
+  override fun onCreate(savedInstanceState: Bundle){
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.user_activity_layout)
+    viewModel.user.observe(this) { user: User ->
+      // update ui.
+    }
+    requireViewById(R.id.button).setOnClickListener{
+      viewModel.doAction()
+    }
+}
+}
+```
+```kotlin
+
+class UserViewModel: ViewModel{
+  private val userLiveDate = MutableLiveData<User>()
+  val user: LiveData<User> get() = userLiveData
+
+  init{
+    //trigger user load.
+  }
+
+  fun doAction(){
+    //depending on the action, do necessary business logic calls and update the
+    //userLiveData.
+}
+}
+```
+
+Atividade
+
+- Criar um aplicativo com os seguinte métodos overriden (pode escrever "on" e apertar ctrl+space para autocompletar):
+  - onCreate(); onStart(); onResume(); onStop(); onDestroy(); onRestart()
+- Adicione um Log.d("test",[nome do método]) em cada método
+- Vá para o logcat e procure pela tag "test"
