@@ -231,3 +231,10 @@ Atividade
 
 
 <img src=".assets/92.JPG">
+
+- Responda:
+  - **Qual foi a ordem?**
+- Aperte o botão home e depois volte para o aplicativo
+  - **Qual foi a ordem?**
+- Pressione o botão home
+  - **Qual foi a ordem?**
