@@ -80,5 +80,59 @@ if(intent.resolveActivity(packageManager)!= null){
   - Criar um aplicativo com um botão com o seguinte código no método onClick() -> when()
  
 ```kotlin
+R.id.create_alarm -> {
+  Log.d(LOG_MSG, "create alarm")
+  val intent = Intent(AlarmClock.ACTION_SET_ALARM).apply{
+    putExtra(AlarmClock.EXTRA_MESSAGE, "Programação 3")
+    putExtra(AlarmClock.EXTRA_HOUR, 19)
+    putExtra(AlarmClock.EXTRA_MINUTES, 0)
+  }
+  if(intent.resolveActivity(packageManager)!=null){
+    startActicity(intent)
+  }
+}
+```
+
+## Intent Implícitas - Criar um timer
+
+```kotlin
+R.id.create_timer -> {
+  val intent = Intent(AlarmClock.ACTION_SET_TIMER).apply{
+    putExtra(AlarmClock.EXTRA_MESSAGE, "Programação 3")
+    putExtra(AlarmClock.EXTRA_LENGTH, 3)
+    putExtra(AlarmClock.EXTRA_SKIP_UI, true)
+  }
+  if(intent.resolveActivity(packageManager)!=null){
+    startActicity(intent)
+  }
+}
+```
+
+## Intent Implícitas - Criar uma agenda
+
+```kotlin
+R.id.create_agenda -> {
+  val intent = Intent(Intent.ACTION_INSERT).apply{
+    data = CalendarContract.Events.CONTENT_URI
+    putExtra(CalendarContract.Events.TITLE, title)
+    putExtra(CalendarContract.Events.EXTRA_LOCATION, "my place")
+    putExtra(CalendarContract.Events.EXTRA_EVENT_BEGIN_TIME, 20.5)
+    putExtra(CalendarContract.Events.EXTRA_EVENT_END_TIME, 22)
+  }
+  if(intent.resolveActivity(packageManager)!=null){
+    startActicity(intent)
+  }
+}
+```
+
+## Intent implícitas - Tirar uma foto
+
+- Atividade
+  - Criar um aplicativo com um botão com o seguinte código criação declaração das variáveis
+ 
+```kotlin
+
 
 ```
+
+23
