@@ -257,3 +257,25 @@ val LAUNCHER: ActivityResultLauncher<Intent> =
 ```
 
 <img src=".assets/96.jpg">
+
+<img src=".assets/97.jpg">
+
+## Context
+
+- **Ponto de acesso** para **informação globais** sobre um ambiente de **aplicativo**
+- **Classe abstrata** cuja implementação é **fornecida** pelo sistema **Android**
+- **Permite acesso a recursos e classes específicas** de aplicativo, bem como chamadas para operações em nível de aplicativo como **iniciar activities, enviar ou receber intents por broadcast, etc.
+- Podemos utilizar:
+  -  this
+  -  getApplicationContext()
+- **Classes base** para **Activity, Service, Application, Context, Broadcast receiver**
+
+<img src=".assets/98.jpg">
+
+## Intent Explícita
+
+- Problemas com ActivityResultLauncher
+
+<img src=".assets/99.JPG">
+
+<img src=".assets/100.jpg">
