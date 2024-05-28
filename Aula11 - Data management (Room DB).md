@@ -17,3 +17,6 @@
     - **CRUD** - Fornecem métodos que o app pode usar para consultar, atualizar, inserir e excluir dados do banco de dados
     - **Database**
       - Contém o **banco de dados** e serve como o ponto de acesso principal para a conexão com os dados persistidos do app
+
+
+<img src=".assets/143.jpg">
