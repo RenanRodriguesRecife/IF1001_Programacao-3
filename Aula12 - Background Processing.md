@@ -1,3 +1,3 @@
 # Background Processing
 
-<img scr=".assets/156.jpg">
+<img src=".assets/156.jpg">
