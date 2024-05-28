@@ -82,3 +82,20 @@
 
 <img src=".assets/120.jpg">
 
+<img src=".assets/121.jpg">
+
+<img src=".assets/122.jpg">
+
+<img src=".assets/123.jpg">
+
+## Armazenamento específico do app
+
+- **Armazenamento Externo detalhes
+
+  - O Android 4.4 (**API de nível 19**) ou **mais recentes**, o app não precisa solicitar permissões relacionadas ao armazenamento para acessar diretórios específicos do app no armazenamento externo
+ 
+  - Android 9 (**nível 28 da API**) ou **versões anteriores** o app **pode acessar** os arquivos específicos que pertencem a outros apps, desde que ele tenha as **permissões** de armazenamento adequadas
+ 
+  - Android 10 (**nível 29 da API**) ou mais recentes recebem acesso com escopo ao **armazenamento externo**
+ 
+    - Os app **não** podem **acessar** os **diretórios** específicos do app que pertencem a **outros apps**.
