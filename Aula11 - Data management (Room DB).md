@@ -19,4 +19,31 @@
       - Contém o **banco de dados** e serve como o ponto de acesso principal para a conexão com os dados persistidos do app
 
 
-<img src=".assets/143.jpg">
+<img src=".assets/144.jpg">
+
+<img src=".assets/145.jpg">
+
+<img src=".assets/146.jpg">
+
+<img src=".assets/147.jpg">
+
+<img src=".assets/148.jpg">
+
+
+
+<img src=".assets/149.jpg">
+
+<img src=".assets/150.jpg">
+
+<img src=".assets/151.jpg">
+
+<img src=".assets/152.jpg">
+
+<img src=".assets/153.jpg">
+
+
+
+<img src=".assets/154.jpg">
+
+<img src=".assets/155.jpg">
+
