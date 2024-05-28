@@ -131,8 +131,47 @@ R.id.create_agenda -> {
   - Criar um aplicativo com um botão com o seguinte código criação declaração das variáveis
  
 ```kotlin
+private val PIC_LAUNCHER: ActivityResultLauncher<Void?> =
+  registerForActivityResult(ActivityResultContracts.TakePicturePreview()){
+    image: Bitmap? ->
+    image?.let{
+      take_pic_preview.setImageBitmap(image)
+}
+}
+```
+- Crie um botão com o seguinte código no método onClick() -> when()
 
-
+```kotlin
+R.id.pic -> {
+  PIC_LAUNCHER.launch(null)
+}
 ```
 
-23
+# Intent Explícita
+
+- É quando passamos um component explicitamente
+
+```kotlin
+R.id.second_activity -> {
+  val intent = Intent(this, SecondActivity::class.java)
+  startActivity(intent)
+}
+```
+
+- Podemos utilizar o startActivitiy() em uma intent explícita
+
+- No intent podemos enviar mensagens através do putExtra
+
+```kotlin
+R.id.second_activity -> {
+  val intent = Intent(this, SecondActivity::class.java)
+  intent.putExtra("data","massage from caller")
+  startActivity(intent)
+}
+```
+
+<img src=".assets/95.jpg">
+  
+
+
+
