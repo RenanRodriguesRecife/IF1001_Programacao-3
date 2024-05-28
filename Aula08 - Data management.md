@@ -90,7 +90,7 @@
 
 ## Armazenamento específico do app
 
-- **Armazenamento Externo detalhes
+- **Armazenamento Externo detalhes**
 
   - O Android 4.4 (**API de nível 19**) ou **mais recentes**, o app não precisa solicitar permissões relacionadas ao armazenamento para acessar diretórios específicos do app no armazenamento externo
  
