@@ -170,7 +170,7 @@ R.id.second_activity -> {
 }
 ```
 
-<img src=".assets/95.jpg">
+<img src=".assets/95.JPG">
   
 
 
