@@ -1,11 +1,11 @@
-![image](https://github.com/RenanRodriguesRecife/IF1001_Programacao-3/assets/14836999/013f7fc8-e0ab-4b8e-8a1f-791c0fcfbcbc)Background processing
+Background processing
 -  lifecycleScope
 -  **ViewModelScope**
 -  **LivedataScope**
 -  **AsyncTask**
 -  **Handlers e loopers**
 
-<img src="./assets/166.jpg">
+<img src=".assets/166.jpg">
 
 ## Scope
 
@@ -21,13 +21,14 @@
   - **lifeDataScope**
     - Atrelado a visibilidade da UI
 
-<img src="./assets/167.jpg">
 
-<img src="./assets/168.jpg">
+<img src=".assets/167.jpg">
+
+<img src=".assets/168.jpg">
 
 ## ViewModel
 
-<img src="./assets/169.jpg">
+<img src=".assets/169.jpg">
 
 -  É um **detentor de estado** da tela ou da **lógica de negócios**
 
@@ -76,7 +77,7 @@ R.id.fourth_act_add ->{
 - E agora?
 
   
-<img src="./assets/170.jpg">
+<img src=".assets/170.jpg">
 
 # LiveData
 
@@ -90,7 +91,7 @@ R.id.fourth_act_add ->{
 ## LiveData - Atividade
 
 
-<img src="./assets/171.jpg">
+<img src=".assets/171.jpg">
 
 - Adicionar o seguinte código no viewModel
 
@@ -123,7 +124,7 @@ fourthAct_viewModel.getCounter2().observe(this,Observer{
 - Qual foi o resultado?
 
 
-<img src="./assets/172.jpg">
+<img src=".assets/172.jpg">
 
 # viewModelScope
 
