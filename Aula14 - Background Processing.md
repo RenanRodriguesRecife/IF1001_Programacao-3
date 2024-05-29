@@ -74,3 +74,82 @@ deferred2.cancel()
 
 <img src=".assets/177.jpg">
 
+## Criando seu próprio escopo
+
+```kotlin
+class ExampleClass{
+//Job and Dispatcher are combined into a CoroutineContext which
+//wii be discussed shortly
+
+val scope = CoroutineScope(Job() + Dispatchers.Main)
+
+fun exampleMethod(){
+  //Starts a new coroutine within the scope
+  scope.launch{
+    //New coroutine that can call suspend functions
+    fetchDocs()
+  }
+}
+
+fun cleanUp(){
+  // Cancel the scope to cancel ongoing coroutines work
+ scope.cancel()
+}
+}
+```
+
+## Nomeando sua sub-rotina
+
+```kotlin
+class ExampleClass{
+  val scope = CoroutineScope(Job() + Dispatchers.Main)
+  fun exampleMethod(){
+    //Starts a new coroutine on Dispatchers.Main as it's the scope's default
+    val job1 = scope.launch{
+      //New coroutine with CoroutineName = "coroutine" (default)
+    }
+
+    //Starts a new coroutine on Dispatchers.Default
+
+    val job2 = scope.launch(Dispatchers.Default + CoroutineName("BackgroundCoroutine")){
+        //New Coroutine with CoroutineName = "BackgroundCoroutine" (overridden)
+    }
+}
+}
+```
+
+## Outras formas de criação de threads
+
+- runnable
+  - É uma interface que requer implementação do método run():
+ 
+```kotlin
+val runnable = object:Runnable{
+    override fun run(){
+      for(i in 1 <= ... <= 100){
+        println("first runnable value: $i")
+      }
+}
+}
+```
+
+- Para executar a thread:
+
+```kotlin
+runnable.run()
+```
+
+## Outras forma de criaçaõ de threads
+
+- handler
+  - Encarregado de enviar mensagens entre threads. Para isso precisa de um runnable
+      - post, sendMessage, postDelayed
+
+- looper
+  - Encarregado de executar as mensagens de um thread
+ 
+- messageQueue
+  - lista de mensagens para serem executadas no looper
+ 
+<img src=".assets/178.jpg">
+
