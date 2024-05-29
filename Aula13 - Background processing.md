@@ -195,4 +195,46 @@ fun addOne(){
     - Operações em listas (sort, filter, map)
     - Transformações de imagem (resize, png to bitmap)
     
-### Dispatchers.
+### Dispatchers.Unconfined
+
+  - Executando com o Dispatcher que o chamar, e podendo ser finalizar em outro Dispatcher
+
+    - **Aonde usar:**
+      - Seu uso não é recomendado em código real !!!
+     
+### Dispatchers.Main.immediate
+
+  - Immediate faz com que sua coroutine seja executada na hora que você a chamar, "passando" ela na frente de outra operações
+
+  - Serve para acelerar o processo de criação/execução da sua coroutine
+
+### Chamando qual Dispatchers
+
+```kotlin
+
+lifecycleScope.launch(Dispatchers.IO){
+  userDao = roomDB_userDetails.userDao()
+}
+```
+
+### Dispatchers - Cuidado !!!
+
+```kotlin
+
+viewModelScope.launch(Dispatcher.IO){
+  val result = apiCall()
+  _myLiveData.value = result
+}
+```
+
+<img src=".assets/173.jpg">
+
+### Dispatchers - Cuidado !!! - Solução
+
+```kotlin
+
+viewModleScope.launch(Dispatcher.IO){
+  val result = apiCall()
+  _myLiveData.postValue(result)
+}
+```
