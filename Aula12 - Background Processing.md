@@ -76,7 +76,3 @@ supend fun fetchUserData(): String{
 
 <img src=".assets/165.JPG">
 
-<img src=".assets/166.JPG">
-
-<img src=".assets/167.JPG">
-
