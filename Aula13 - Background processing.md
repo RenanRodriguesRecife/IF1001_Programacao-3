@@ -139,3 +139,60 @@ fun addOne(){
 }
 }
 ```
+
+## Scope
+
+- Sub-rotinas tem diversos tipos de escopo:
+  - **GlobalScope**
+    - Atrelado ao ciclo de vida da aplicação
+  - **runBlocking**
+    - Bloqueia a thread atual (Não recomendado!!!)
+  - **lifeCycleScope**
+    - Atrelado ao ciclo de vida da sub-rotina
+  - **viewModelScope**
+    - Atrelado ao ciclo de vida do View Model
+  - **liveDataScope**
+    - Atrelado a visibilidade da UI
+   
+-->> TODAS RODAM NA MAIN THREAD !!! :000 <<--
+
+## Dispatchers
+
+- Determina qual thread a sub-rotina vai usar para a sua execução
+
+  - **Dispatchers.Main**
+ 
+  - **Dispatchers.IO**
+ 
+  - **Dispatchers.Default**
+ 
+  - **Dispatchers.Unconfined**
+ 
+  - **Dispatchers.Main.immediate**
+
+ ### Dispatchers.Main
+
+ - Executa coroutines dentro da MainThread, ou seja, essa operação vai concorrer com suas operações de UI, como: Listeners, UI draws e tudo que envolve UI
+
+ - **Aonde usar:**
+   - Animações
+   - sets de UI
+   - buscas simples que retornam dados para UI
+  
+ ### Dispatchers.IO
+
+  - Executa coroutines dentro de um conjunto de Threads separadas para IO
+
+  - **Aonde usar:**
+    - Chamdas de API
+    - Chamadas de Banco de dados
+   
+  ### Dispatchers.Default
+
+  - Executa coroutines dentro de um conjunto de Threads, assim como o IO, porém o foco dele é em operações pesadas do próprio app
+
+  - **Aonde usar**
+    - Operações em listas (sort, filter, map)
+    - Transformações de imagem (resize, png to bitmap)
+    
+### Dispatchers.
