@@ -26,7 +26,7 @@
 
 ## Atividade
 
-<img src=".asserts/174.jpg">
+<img src=".assets/174.jpg">
 
 - No clique do primeiro botão
 
@@ -68,9 +68,9 @@ lifecycleScope.launch{
 deferred2.cancel()
 ```
 
-<img src=".asserts/175.jpg">
+<img src=".assets/175.jpg">
 
-<img src=".asserts/176.jpg">
+<img src=".assets/176.jpg">
 
-<img src=".asserts/177.jpg">
+<img src=".assets/177.jpg">
 
