@@ -212,3 +212,119 @@ handler.postDelayed(myRunnable(handler),5) // <- Enviando uma nova mensagem para
 
 <img src=".assets/179.jpg">
 
+## Atividade 1
+
+- Criar uma função que torna um runnable. Esta função tem um for de 1 - 100
+  - Chame esta função no onCreate e veja o resultado no logcat
+    
+  ```kotlin
+  fun myRunnable(){
+    val runnable = object : Runnable {
+      override fun run() {
+        for (i in 1..10){
+          println("value: $i")
+        }
+      }
+  }
+  runnable.run()
+  }
+  ```
+
+## Atividade 2
+
+- Criar uma função para postegar uma execução de um thread
+
+```kotlin
+private fun addRunnableToCurrentThreadMessageQueue(runnable: Runnable, looper: Looper, toMillis: Long){
+  val handler = Handler(looper)
+  Log.d(LOG, "thread state: ${looper.thread.state}")
+  handler.postDelayed(runnable,toMillis)
+  //handler.postAtTime(runnable, toMillis)
+  //handler.post(runnable)
+}
+```
+
+- Chamar esta função no oncreate com o seguinte código
+
+```kotlin
+addRunnableToCurrentThreadMessageQueue(
+  runnable = myRunnable(),
+  looper = Looper.getMainLooper(),
+  TimeUnit.SECODS.toMillis(5)//(SystemClock.uptimeMillis() + TimeUnit.SECONDS.toMillis(10))
+```
+
+## Atividade 3
+
+- Criar uma classe para trocar de mensagem entre a thread e o handler
+
+```kotlin
+const val MSG_DATA_VALUE = "value"
+
+class CustomThread {
+  private lateinit var thread: Thread
+
+  fun initThread(handler: Handler){
+    thread = Thread{
+      var result = 0L
+      for (value in 100<= ..<= 200){
+        result = value.toLong()
+        val executionResult = Message().apply{data = bundleOf(MSG_DATA_VALUE to result)}
+        handler.sendMessage(executionResult)
+    }
+}
+thread.start()
+}
+}
+```
+
+- Crie uma função para iniciar sua custom thread e trocar mensagem com o handler
+  - Chame esta função no onCreate e veja o resultado
+ 
+```kotlin
+private fun initCustomThreadFlow(){
+  val customThread = CustomThread()
+  val handler = Handler(Looper.getMainLooper()){message ->
+    Log.d(LOG,"consume in thread ${Looper.getMainLooper().thread.id}")
+    val result = message.data.getLong(MSG_DATA_VALUE)
+    Log.d(LOG,"result is : $result")
+    true
+}
+customThread.initThread(headler)
+}
+```
+
+- Envie através do handler com um delay de 5 miliseconds o runnable criado na etapa anterio
+  - Chame esta função no onCreate e veja o resultado
+ 
+```kotlin
+private fun initCustomThreadFlow(){
+  val customThread = CustomThread()
+  val handler = Handler(Looper.getMainLooper()){ message -> Log.d(LOG,"cosume in thread &{Looper.getMainLooper().thread.id}")
+  val result = message.data.getLong(MSG_DATA_VALUE)
+  Log.d(LOG,"result is: $result")
+  true
+}
+customThread.initThread(handler)
+handler.postDelayed(myRunnable(handler),5)
+}
+```
+
+## Atividade 4
+
+- Crie uma função que retorne um runnable para ser adicionada na pool de mensagens de uma thread
+  - Esta função deverá enviar mensagens de volta ao handler
+ 
+```kotlin
+
+private fun myRunnable2(handler: Handler): Runnable{
+  return Runnable{
+    var result = 0L
+    for(1 in 1 <= .. <= 100){
+      result = i.toLong()
+      val executionResult = Message().apply{data = bundleOf(MSG_DATA_VALUE to result)}
+      handler.sendMessage(executionResult)
+    }
+}
+}
+```
+
