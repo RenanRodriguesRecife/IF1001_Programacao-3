@@ -139,3 +139,34 @@ override fun onRequestPermissionsResult(
 <img src=".assets/184.jpg">
 
 <img src=".assets/185.jpg">
+
+## Atividade
+
+```kotlin
+if(ContextCompat.checkSelfPermission(this,android.Manifest.permission.ACCESS_FINE_LOCATION)!= PackageManager.PERMISSION_GRANTED){
+  if(ActivityCompat.shouldShowRequestPermissionRationale(this,android.Manifest.permission.ACCESS_FINE_LOCATION)){
+  ActivityCompat.requestPermissions(this,arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION),ACCESS_FINE_LOCATION)
+}else{
+  ActivityCompat.requestPermissions(this,arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION),ACCESS_FINE_LOCATION)
+}
+}
+```
+
+```kotlin
+override fun onRequestPermissionsresult(requestCode: Int, permissions: Array<out String>,grantResults: IntArray){
+  super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+
+  if(requestCode == ACCESS_FINE_LOCATION){
+    if(grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+    //Permission granted.
+    Toast.makeText(this,"ok",Toast.LENGTH_SHORT).show()
+    }else{
+    Toast.makeText(this,"not ok", Toast.LENGTH_SHORT).show()
+    //Permission denied by the user.
+  }
+}
+}
+```
+
+## Adicionando Múltiplas Permissões
+
