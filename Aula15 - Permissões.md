@@ -170,3 +170,33 @@ override fun onRequestPermissionsresult(requestCode: Int, permissions: Array<out
 
 ## Adicionando Múltiplas Permissões
 
+```kotlin
+
+fun checkPermission(): Boolean{
+
+    val permissions: List<String> = listOf(
+      android.Manifest.permission.ACCESS_FINE_LOCATION,
+      android.Manifest.permission.ACCESS_COARSE_LOCATION,
+      android.Manifest.permission.WRITE_EXTERNAL_STORAGE,
+      android.Manifest.permission.CAMERA)
+  
+    var listPermissionsNeeded: List<String> = listOf()
+  
+    for(permission in permissions){
+      val result = ContextCompat.checkSelfPermission(this, permission)
+      if (result != PackageManager.PERMISSION_GRANTED || ActivityCompat.shouldShowRequestPermissionRationale(this, permission)){
+        Log.d(LOG, android.Manifest.permission.ACCESS_FINE_LOCATION + " not granted")
+        listPermissionsNeeded = listPermissionsNeeded.plus(permission)
+      } else {
+        Log.d(LOG, android.Manifest.permission.ACCESS_FINE_LOCATION + " granted")
+      }
+  }
+  
+    if(listPermissionsNeeded.isNotEmpty()){
+      val arrayOfStrings: Array<String> = listPermissionsNeed.toTypedArray()
+      ActivityCompat.requestPermissions(this,arrayOfStrings,MULTIPLE_PERMISSIONS)
+      return false
+    }
+  return false
+}
+```
