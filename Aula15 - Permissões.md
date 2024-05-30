@@ -116,3 +116,20 @@ override fun onRequestPermissionsResult(
 }
 }
 ```
+
+## Adicionando uma permissão
+
+- **checkSelfPermission**
+  - Checa se usuário **já concedeu permissão**
+    - Retorna boolean (GRANTED, DENIED)
+
+- **shouldShowRequestPermissionRationale**
+  - Mostra importância da permissão
+    - Retorna true
+      - Se a permissão foi pedida anteriormente mas o usuário **negou e não clicou** "never ask again"
+    - Retorna false
+      - Se a permissão é requisitada pela **primeira vez**
+      - Se a permissão foi pedida anteriormente mas o usuário **negou e clicou** "never ask again"
+     
+ - **Request permission**
+   - **Requisita a permissão**
