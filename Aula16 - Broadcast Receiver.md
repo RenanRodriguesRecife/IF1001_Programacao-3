@@ -8,5 +8,4 @@
  
 - **Transmissões** podem ser usadas como um **sistema de mensagens entre apps** e **fora do fluxo normal** do usuário
 
-  
-<img src=".assets/
+<img src=".assets/186.jpg">
