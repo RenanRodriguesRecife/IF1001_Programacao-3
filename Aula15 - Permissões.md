@@ -133,3 +133,7 @@ override fun onRequestPermissionsResult(
      
  - **Request permission**
    - **Requisita a permissão**
+  
+<img src=".assets/184.jpg">
+
+<img src=".assets/185.jpg">
