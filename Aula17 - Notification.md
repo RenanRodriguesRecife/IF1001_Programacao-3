@@ -39,3 +39,9 @@ Notifications
   ```
   <user-permission android:name="android.permission.POST_NOTIFICATIONS"/>
   ```
+
+<img src=".assets/193.jpg">
+
+<img src=".assets/194.jpg">
+
+<img src=".assets/195.jpg">
