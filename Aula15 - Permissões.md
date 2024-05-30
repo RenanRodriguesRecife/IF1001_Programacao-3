@@ -106,4 +106,13 @@ override fun onRequestPermissionsResult(
   super.onRequestPermissionsResult(requestCode, permissions, grantResults)
 
   if(requestCode == ACCESS_FINE_LOCATION){
-    if(grantResults.isNotEmpty() && 
+    if(grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+      //Permission granted
+      Toast.makeText(this,"ok",Toast.LENGTH_SHORT).show()
+    }else{
+      Toast.makeText(this,"not ok",Toast.LENGTH_SHORT).show()
+      //Permission denied by the user.
+    }
+}
+}
+```
