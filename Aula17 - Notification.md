@@ -58,3 +58,31 @@ Notifications
   PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
 
   ```
+
+## Pending Intent - Flags
+
+- **FLAG_CANCEL_CURRENT:** Se a PendingIntent já existir, esta será cancelada e a nova PendingIntent será criada
+
+- **FLAG_IMMUTABLE**: Esta flag indica que a PendingIntent não deve ser modificada posteriormente
+
+- **FLAG_NO_CREATE:** Se a PendingIntent já existir, o sistema não irá criar uma nova PendinIntent, mas irá retornar null.
+
+- **FLAG_ONE_SHOT**: Esta flag indica que a PendingIntent só pode ser usada uma vez. Depois que a ação for realizada, a PendingIntent será automaticamente cancelada
+
+- **FLAG_UPDATE_CURRENT**: Se a PendingIntent já existir, seus extras serão atualizados com os extras passados no novo intent.
+
+<img src=".assets/196.jpg">
+
+<img src=".assets/197.jpg">
+
+<img src=".assets/198.jpg">
+
+<img src=".assets/199.jpg">
+
+<img src=".assets/200.jpg">
+
+<img src=".assets/201.jpg">
+
+<img src=".assets/202.jpg">
+
+<img src=".assets/203.jpg">
