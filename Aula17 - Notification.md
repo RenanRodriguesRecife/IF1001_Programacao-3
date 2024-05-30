@@ -45,3 +45,16 @@ Notifications
 <img src=".assets/194.jpg">
 
 <img src=".assets/195.jpg">
+
+## Pending Intent
+
+- PendingIntent é um objeto que representa uma **intenção futura de execução** de uma operação
+  - **Ação** que será realizada **em nome do seu aplicativo** em algum momento **futuro**
+ 
+  A utilidade primordial de uma PendingIntent é **permitir** que você entregue uma **referência de ação** a **outro aplicativo ou ao sistema**, permitindo que esse aplicativo ou o sistema **execute a ação** em nome do seu aplicativo, mesmo se o **seu aplicativo não estiver em primeiro plano**.
+
+  ```kotlin
+  Intent intent = new Intent(this, MinhaAtividade.class);
+  PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+
+  ```
