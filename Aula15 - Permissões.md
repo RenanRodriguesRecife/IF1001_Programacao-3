@@ -15,3 +15,9 @@
    
   - Permissão de **execução**
     - Exigem que seu app solicite a permissão no momento da **execução**
+
+<img scr=".assets/180.jpg">
+
+<img scr=".assets/181.jpg">
+
+<img scr=".assets/182.jpg">
