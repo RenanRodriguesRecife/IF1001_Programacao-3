@@ -153,4 +153,62 @@ runnable.run()
  
 <img src=".assets/178.jpg">
 
-18
+- Criação do handler simples
+
+```kotlin
+private fun addRunnableToCurrentThreadMessageQueue(runnable: Runnable, looper: Looper, ToMillis: Long){
+  val handler = Handler(looper)
+  Log.d(LOG, "thread state: ${looper.thread.state}")
+  handler.postDelayerd(runnable, toMillis)
+  //handler.postAtTime(runnable, toMillis)
+  //handler.post(runnable)
+}
+```
+
+- Chamando a função para criar a thread
+
+```kotlin
+addRunnableToCurrentThreadMessageQueue(
+  runnable = myRunnable(),
+  looper = Looper.getMainLooper(),
+  TimeUnit.SECONDS.toMillis(5)//(SystemClock.uptimeMillis() + TimeUnit.SECONDS.toMillis(10))
+```
+
+- Executando em uma nova thread
+
+```const val MSG_DATA_VALUE = "value"
+
+class CustomThread{
+  private lateinit var thread: Thread
+
+  fun initThread(handler: Handler){
+    thread = Thread{
+      var result = 0L
+      for (value in 100 <= .. <= 200){
+        result = value.toLong()
+        val executionResult = Message().apply {data = bundleOf(MSG_DATA_VALUE to result)}
+        handler.sendMessage(executionResult)
+      }
+}
+thread.start()
+}
+}
+```
+
+- Executando em uma nova thread
+
+```kotlin
+private fun initCustomThreadFlow(){
+  val customThread = CustomThread()
+  val handler = Handler(Looper.getMainLooper()){ message -> Log.d(LOG,"consume in thread ${Looper.getMainLooper().thread.id}")
+  val result = message.data.getLong(MSG_DATA_VALUE)
+  Log.d(LOG,"result is : $result")
+  true
+}
+customThread.initThread(handler)
+handler.postDelayed(myRunnable(handler),5) // <- Enviando uma nova mensagem para a thread!!!
+}
+```
+
+<img src=".assets/179.jpg">
+
