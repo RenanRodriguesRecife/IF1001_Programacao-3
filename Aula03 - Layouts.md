@@ -158,3 +158,7 @@ Tablelayout é um ViewGroup que exibe elementos filhos de View em linhas e colun
   Android UI Design Plan, design, and build engaging user interfaces for your Android applications - Jassica Thornsby
 
 
+
+  OBS: Para organizar o código XML rapidamente você pode rodar o comando: (CTRL+ALT+L)
+
+
