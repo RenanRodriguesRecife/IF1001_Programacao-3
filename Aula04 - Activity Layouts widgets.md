@@ -1,7 +1,5 @@
 # Activity layouts / widgets
 
-- Exercícios
-
 - Android Manifest
 
 - Activity
