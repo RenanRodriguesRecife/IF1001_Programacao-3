@@ -17,39 +17,6 @@
     - ImageButton
 
 
-## Exercício
-
-- Criar um novo projeto Empty Views Project
-
-- Ir para res/layout
-
-
-<img src=".assets/62.jpg">
-
-<img src=".assets/63.jpg">
-
-<img src=".assets/64.jpg">
-
-<img src=".assets/65.jpg">
-
-<img src=".assets/66.jpg">
-
-<img src=".assets/67.jpg">
-
-<img src=".assets/68.jpg">
-
-<img src=".assets/69.jpg">
-
-<img src=".assets/70.jpg">
-
-<img src=".assets/71.jpg">
-
-<img src=".assets/72.jpg">
-
-<img src=".assets/73.jpg">
-
-<img src=".assets/74.jpg">
-
 <img src=".assets/75.jpg">
 
 <img src=".assets/76.jpg">
