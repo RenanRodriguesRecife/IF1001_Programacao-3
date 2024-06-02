@@ -223,6 +223,52 @@ Tablelayout é um ViewGroup que exibe elementos filhos de View em linhas e colun
 
 <img src=".assets/61.jpg">
 
+```kotlin
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstraintLayout">
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ButtonA"
+        tools:layout_marginLeft="45dp"
+        tools:layout_marginTop="243dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ButtonB"
+        tools:layout_marginLeft="57dp"
+        app:layout_constraintTop_toTopOf="@+id/buttonA"
+        app:layout_constraintStart_toEndOf="@id/buttonA"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+
+        android:layout_marginTop="60dp"
+        android:text="ButtonC"
+        app:layout_constraintStart_toStartOf="@id/buttonA"
+        app:layout_constraintTop_toBottomOf="@+id/buttonA"
+        app:layout_constraintEnd_toEndOf="@+id/buttonA"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
 ### Referências
 
 - https://developer.android.com
