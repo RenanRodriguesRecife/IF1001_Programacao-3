@@ -109,6 +109,82 @@ RelativeLayout é um ViewGroup que exibe visualizações dos seus filhos em posi
 
 <img src=".assets/51.jpg">
 
+```kotlin
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button1"
+        android:layout_marginLeft="10dp"/>
+        
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button2"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button3"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button5"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button6"
+        android:layout_above="@id/btn4"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button7"
+        android:layout_toEndOf="@id/btn1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        />
+</RelativeLayout>
+```
+
 ## Tablelayout
 
 Tablelayout é um ViewGroup que exibe elementos filhos de View em linhas e colunas.
