@@ -310,6 +310,8 @@ OBS: Para organizar o código XML rapidamente você pode rodar o comando: (CTRL+
 
 <img src=".assets/70.jpg">
 
+obs: Correção é relativeLayout não linearLayout
+
 <img src=".assets/71.jpg">
 
 <img src=".assets/72.jpg">
