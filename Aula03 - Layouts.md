@@ -320,3 +320,57 @@ obs: Correção é relativeLayout não linearLayout
 
 <img src=".assets/74.jpg">
 
+```kotlin
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toTopOf="@id/text1"
+        app:layout_constraintEnd_toStartOf="@id/text1"
+        app:layout_constraintStart_toEndOf="@id/text3" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="@id/text2"
+        app:layout_constraintEnd_toStartOf="@+id/text1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text4" 
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintEnd_toStartOf="@id/text1"
+        app:layout_constraintStart_toEndOf="@id/text3"
+        app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
