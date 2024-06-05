@@ -33,6 +33,14 @@
 
 <img src=".assets/82.jpg">
 
+Acho que está desatualizado
+
+```kotlin
+button.setOnClickListener(){
+            Log.d(LOG_MSG,"button click1")
+}
+```
+
 <img src=".assets/83.jpg">
 
 <img src=".assets/84.jpg">
