@@ -33,7 +33,7 @@
 
 <img src=".assets/82.jpg">
 
-Acho que está desatualizado
+Acho que está desatualizado. fun onClick não está funcionando
 
 ```kotlin
 button.setOnClickListener(){
