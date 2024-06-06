@@ -33,3 +33,16 @@
 <img src=".assets/206.jpg">
 
 <img src=".assets/207.jpg">
+
+## Service simples - Começar um serviço
+
+```kotlin
+R.id.start_service -> {
+  val intent: Intent = Intent(this, MyService::class.java)
+  if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+    startForegroundService(intent)
+}
+}
+```
+
+<img src=".assets/208.jpg">
