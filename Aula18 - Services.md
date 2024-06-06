@@ -24,4 +24,4 @@
 
   - Os serviços em primeiro plano **precisam exibir uma Notificação** para que os usuário estejam **ativamente cientes** de que o serviço está em execução
     - Essa notificação **não pode ser dispensada, a menos que o serviço seja interrompido ou removido do primeiro plano**
-    -   - OBS: No Android 13 usuários podem dispensar a notificação associada a um serviço em primeiro plano por padrão
+      - OBS: No Android 13 usuários podem dispensar a notificação associada a um serviço em primeiro plano por padrão
