@@ -169,3 +169,33 @@ adicionar permissão
 
 <img src=".assets/213.jpg">
 
+## Service simples - onBind - Atividade
+
+```kotlin
+
+class MyServiceBind: Service(){
+  private val LOG: String = "myService"
+  lateinit var notificationManager: NotificationManager
+  private val binder: Binder = LocalBinder()
+  private val mGenerator = Randow()
+
+  val randomNumber: Int
+    get() = mGenerator.nextInt(100)
+
+  overrider fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int{
+    Log.d(LOG,"onStartCommand")
+
+    val notification = NotificationCompat.Builder(
+      this,
+      "YOUR_CHANNEL_ID")
+      .setSmallIcon(R.mipmap.ic_laucher)
+      .setContentTitle("programação 3")
+      .setContentText("my service")
+      .build()
+
+    startForeground(
+      100,
+      notification)
+
+    return START_NOT_STICKY
+}
