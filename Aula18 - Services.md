@@ -27,3 +27,5 @@
       - OBS: No Android 13 usuários podem dispensar a notificação associada a um serviço em primeiro plano por padrão
 
 <img src=".assets/204.jpg">
+
+<img src=".assets/205.jpg">
