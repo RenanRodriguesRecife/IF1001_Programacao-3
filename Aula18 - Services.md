@@ -160,3 +160,12 @@ adicionar permissão
 - Esse método **retorna** um objeto **IBinder** que define a **interface de programação** que os clientes podem usar para interagir com o serviço.
 
 <img src=".assets/209.jpg">
+
+<img src=".assets/210.jpg">
+
+<img src=".assets/211.jpg">
+
+<img src=".assets/212.jpg">
+
+<img src=".assets/213.jpg">
+
