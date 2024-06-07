@@ -56,8 +56,8 @@ R.id.start_service -> {
 }
 ```
 
-```
-  val cameraPermission = ContextCompat.checkSelfPermission(this,android.Manifest.permission.CAMERA)
+```kotlin
+val cameraPermission = ContextCompat.checkSelfPermission(this,android.Manifest.permission.CAMERA)
 if(cameraPermission as PackageManager.PERMISSION_DENIED){
   stopSelf()
   return
