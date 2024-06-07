@@ -199,3 +199,78 @@ class MyServiceBind: Service(){
 
     return START_NOT_STICKY
 }
+  override fun onCreate(){
+    super.onCreate()
+
+    Log.d(LOG,"service onCreate")
+
+    notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+      val channel: NotificationChannel = NotificationChannel(
+        "YOUR_CHANNEL_ID",
+        "YOUR_CHANNEL_NAME",NotificationManager.IMPORTANCE_DEFAULT)
+      channel.enableLights(true)
+      channel.ligthColor = Color.BLUE
+      channel.description = "YOUR_NOTIFICATION_CHANNEL_DESCRIPTION"
+      notificationManager.createNotificationChannel(channel)
+}
+}
+
+overrider fun onDestroy(){
+  super.onDestroy()
+  Log.d(LOG,"service onDestroy")
+}
+
+inner class LocalBinder:Binder(){
+//Retorna a instancia do seu serviço para que clientes possam chamar os métodos públicos
+fun getService(): MyServiceBind = this@MyServiceBind
+}
+
+override fun onBind(p0: Intent?): IBinder{
+  return binder
+}
+}
+
+```
+```kotlin
+private lateinit var mService: MyServiceBind
+private var mBound: Boolean = false
+/** Defines callbacks for service binding, passed to bindService(). */
+private val connection = object: ServiceConnection{
+  override fun onServiceConnected(className: ComponentName, service: IBinder){
+  //We've bound to LocalService, cast the IBinder and get LocalService instance.
+  val binder = service as MyServiceBind.LocalBinder
+  mService = biner.getService()
+  mBound = true
+}
+override fun onServiceDisconnected(arg0: CompoonentName){
+  mBound = false
+}
+}
+
+```
+
+## Service simples - onBind
+
+OBS: Iniciar o serviço no onCreate()
+
+```kotlin
+Intent(this, MyServiceBind::class.java).also {intent ->
+  bindService(intent, connection, Context.BIND_AUTO_CREATE)
+}
+```
+
+<img src=".assets/214.jpg">
+
+Adicionar serviço no manifest
+
+```kotlin
+<service
+  android:name=".MyServiceBind"
+  android:exported="true"
+  android:foregroundServiceType="specialUse"/>
+```
+
+## Atividade desafio
+
+Juntar o serviço tocar áudio com esta atividade
