@@ -8,7 +8,7 @@
  
   - **Execução garantida** se refere à lógica para **iniciar o trabalho em diversas situações**, mesmo se você sair do app
  
-## Tuois de trabalho
+## Tupos de trabalho
 
 - Imediato: tarefas que precisam começar imediatamente e terminar em breve. Podem ser priorizados
 
@@ -19,3 +19,21 @@
 <img src=".assets/215.jpg">
 
 <img src=".assets/216.jpg">
+
+## Quando utilizar
+
+Alguns exemplos de tarefas que fazem um bom uso do WorkManager:
+
+- Consultar periodicamente as últimas notícias
+- Aplicar filtros a uma imagem e salvá-la.
+- Sincronização periódica de dados locais com a rede.
+
+## Principais classes e conceitos
+
+- **Worker**
+  - **Define como o work vai ser executado**. Aceita **inputs** (workerParameters) e produz **outputs**(Data/chave - valor). Sempre vai retornar um resultado representado **SUCCESS, FAILURE ou RETRY**
+ 
+- **WorkRequest**
+  - Representa uma tarefa. Deve no mínimo especificar qual classe Worker vai executar a tarefa
+ 
+9
