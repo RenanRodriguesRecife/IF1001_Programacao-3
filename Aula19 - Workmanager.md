@@ -88,10 +88,30 @@ override fun doWork():Result{
     Context.NOTIFICATION_SERVICE) as NotificationManager
 
  if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+  val channel: NotificationChannel = NotificationChannel(
+    "YOUR_CHANNEL_ID",
+    "YOUR_CHANNEL_NAME", NotificationManager.IMPORTANCE_DEFAULT)
+  channel.enableLights(true)
+  channel.lightColor = Color.BLUE
+  channel.description = "YOUR_NOTIFICATION_CHANNEL_DESCRIPTION"
+  notificationManager.createNotificationChannel(channel)
+}
 
+val notification = NotificationCompat.Builder(
+  applicationContext,
+  "YOUR_CHANNEL_ID")
+  .setSmallIcon(R.mipmap.ic_launcher)
+  .setContentTitle("programação 3")
+  .setContentText("my service")
 
+//Perform the background task here.
+//such as displaying a notification
+notificationManager.notify(0,notification.build())
+
+return Result.success()
+}
 ```
-14
+
 
 
 
