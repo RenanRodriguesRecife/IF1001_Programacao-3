@@ -36,4 +36,62 @@ Alguns exemplos de tarefas que fazem um bom uso do WorkManager:
 - **WorkRequest**
   - Representa uma tarefa. Deve no mínimo especificar qual classe Worker vai executar a tarefa
  
-9
+- **Constraints**
+  - **Conjunto de requisitos** que podem ser definidos. São **validados antes** que uma execução de um WorkRequest possa reaolmente acontecer. Assim o WorkRequest **só vai ser executado se esses requisitos forem atendidos.**
+ 
+- **WorkManager**
+  - **Gerencia as tarefas** que são agendadas **de forma distribuída** e **honrando as restrições** específicadas de **cada tarefa**.
+(Na prática o mínimo é 15 minutos para funcionar no android)
+
+- **WorkInfo**
+  - Contém **informações sobre cada tarefa**. Podemos usar para **observar o estado da tarefa** e baseado em cada estado **tomar uma ação**
+ 
+### Atividade
+
+- Utilizar o workmanager para enviar uma notificação somente uma vez
+
+1- passo
+
+- Declarar a dependência no arquivo build:Module app
+
+```kotlin
+dependencies{
+  //WorkManager dependency
+  implementation("androidx.work:work-runtime-ktx: 2.9.0")
+```
+
+2 - passo
+
+- Criar uma classe que herda Worker e implementa doWork()
+
+```kotlin
+package com.aimirisolutions.demos
+
+import android.content.Context
+import androidx.work.Worker
+import androidx.work.WorkerParameters
+
+class MyNotificationWorkManager(context: Context, workerParams: WorkerParameters):Worker(context,workerParams){
+  override fun doWork(): Result{
+    TODO("Not yet implemented")
+}
+}
+```
+
+3 - passo
+
+- Implementar qual vai ser nossa tarefa
+
+```kotlin
+override fun doWork():Result{
+  val notificationManager:NotificationManager = applicationContext.getSystemService(
+    Context.NOTIFICATION_SERVICE) as NotificationManager
+
+ if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+
+
+```
+14
+
+
+
