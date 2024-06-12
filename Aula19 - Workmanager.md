@@ -17,3 +17,5 @@
 - Adiável: tarefas programadas que começam posteriormente e podem ser executadas periodicamente
 
 <img src=".assets/215.jpg">
+
+<img src=".assets/216.jpg">
