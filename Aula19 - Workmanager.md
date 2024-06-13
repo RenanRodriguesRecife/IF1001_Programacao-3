@@ -156,5 +156,78 @@ WorkManager.getInstance(this).enqueue(notificationWorkRequest)
 }
 ```
 
-18
+- Utilizar o workmanager para enviar uma notificação inúmeras vezes
 
+```kotlin
+override fun doWork():Result{
+  val notificationManager: NotificationManager = applicationContext.getSystemService(
+    Context.NOTIFICATION_SERVICE) as NotificationManager
+
+  if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+    val channel: NotificationChannel = NotificationChannel(
+      "YOUR_CHANNEL_ID"
+      "YOUR_CHANNEL_NAME", NotificationManager.IMPORTANCE_DEFAULT)
+   channel.enableLights(true)
+   channel.lightColor = Color.BLUE
+   channel.description = "YOUR_NOTIFICATION_CHANNEL_DESCRIPTION"
+   notificationMananger.createNotificationChannel(channel)
+}
+
+val notification = NotificationCompat.Bulder(
+  applicationContext,
+  "YOUR_CHANNEL_ID")
+  .setSmallIcon(R.mipmap.ic_launcher)
+  .setContentTitle("programação 3 ..." + tmp)
+  .setContentText("my service")
+
+//Perform the backgrond tesk here,
+//such as displaying a notification
+notificationManager.notify(0, notification.build())
+
+Log.d("LOG","my notification work manager")
+
+tmp++
+
+return Result.retry()
+}
+```
+
+- Utilizar o workmanager para enviar uma notificação inúmeras vezes
+
+```kotlin
+R.id.workmanager_notification_period -> {
+  periodicWorkRequest = PeriodicWorkRequest.Builder(MyNotificationWorkManagerPeríod::class.java, 3, TimeUnit.SECONDS).build()
+WorkManager.getInstance(this).enqueue(periodicWorkRequest)
+}
+R.id.workmanager_notification_period_stop -> {
+  WorkManager.getInstance(this).cancelWorkById(periodicWorkRequest.id)
+}
+```
+
+- Enviando mensagens I - na atividade
+
+```kotlin
+R.id.workmanager_notification_send_msg -> {
+  val inputData = Data.Builder()
+    .putString("data1","blah blah blah")
+    .putBoolean("data2",true)
+    .build()
+  val notificationWorkRequest: WorkRequest = OneTimeWorkRequest.Builder(MyNotificationWorkManagerSendMsg::class.java)
+  .setInputData(inputData)
+  .build()
+WorkManager.getInstance(this).enqueue(notificationWorkRequest)
+}
+```
+
+- Recebendo mensagens no worker
+
+```kotlin
+  val data1: String? = inputData.getString("data1")
+  val data2: Boolean = inputData.getBoolean("data2",false)
+
+```
+
+- Enviando Mensagens 2
+
+```kotlin
+R.id.workmanager_notification_send_msg2 -> {
