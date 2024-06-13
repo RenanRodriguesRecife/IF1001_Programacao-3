@@ -112,6 +112,49 @@ return Result.success()
 }
 ```
 
+4- passo
 
+- Criar nossa work request no clique do botão
 
+```kotlin
+R.id.workmanager_notification -> {
+  val notificationWorkRequest: WorkRequest = OneTimeWorkRequest.Builder(MyNotificationWorkManager::class.java)
+  .setInitialDelay(3,TimeUnit.SECONDS)
+  .build()
+  WorkManager.getInstance(this).enqueue(notificationWorkRequest)
+}
+```
+
+- Adicionando um constraint
+
+```kotlin
+  val constraints = Constraints.Builder()
+    .setRequiresBatteryNotLow(true)
+    .setRequiredNetworkType(NetworkType.CONNECTED)
+    .setRequiresCharging(true)
+    .setRequiresStorageNotLow(true)
+    .setRequiresDeviceIdle(true)
+    .build()
+```
+
+### Atividade
+
+- Adicionadno um contraint
+
+```kotlin
+R.id.workmanager_notification_contraints -> {
+  val contraints: Constraints = Constraints.Builder()
+    .setRequiredNetworkType(NetworkType.CONNECTED)
+    .setRequiresCharging(true)
+    .build()
+
+  val notificationWorkRequest: WorkRequest = OneTimeWorkRequest.Builder(MyNotificationWorkManager::class.java)
+  .setInitialDelay(3,TimeUnit.SECONDS)
+  .setConstraints(contraints)
+  .build()
+WorkManager.getInstance(this).enqueue(notificationWorkRequest)
+}
+```
+
+18
 
