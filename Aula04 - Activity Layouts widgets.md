@@ -129,7 +129,7 @@ class MainActivity : AppCompatActivity() {
         app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-``
+```
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
