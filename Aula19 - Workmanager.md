@@ -231,3 +231,12 @@ WorkManager.getInstance(this).enqueue(notificationWorkRequest)
 
 ```kotlin
 R.id.workmanager_notification_send_msg2 -> {
+  val inputData = workDataOf("data1" to "blah blah blah","data2" to "blah blah blah")
+  val notificationWorkRequest: WorkRequest = OneTimeWorkRequest.Builder(MyNotificationWorkManagerSendMsg::class.java)
+    .setInputData(inputData)
+    .build()
+  WorkManager.getInstance(this).enqueue(notificationWorkRequest)
+}
+```
+
+<img src=".assets/217.jpg">
