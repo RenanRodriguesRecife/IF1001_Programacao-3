@@ -160,3 +160,27 @@ class MainActivity : AppCompatActivity() {
 <img src=".assets/89.jpg">
 
 <img src=".assets/90.jpg">
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+
+    lateinit var button: Button
+    lateinit var imageView: ImageView
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_main)
+
+        button = findViewById<ImageButton>(R.id.button) as Button
+        imageView = findViewById<ImageView>(R.id.imageView3) as ImageView
+        button.setOnClickListener{
+
+
+            imageView.setBackgroundResource(R.drawable.teste)
+        }
+
+    }
+}
+``
