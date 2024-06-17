@@ -32,5 +32,13 @@ WorkManager.getInstance(this).getWorkInfoByIdLiveData(notificationWorkRequest.id
 
 - Os pilares do android:
 
-<img src=".assets/
+<img src=".assets/218.jg">
 
+- Importante componente do android para compartilhar dados entre aplicativos
+- Funciona como "repositório central" na qual dados de aplicativos são armazenados
+  - Facilita o gerenciamento e atualizações de informações
+    - A atualização de informação depende das restrições impostas
+   
+<img src=".assets/219.jg">
+
+<img src=".assets/220.jg">
