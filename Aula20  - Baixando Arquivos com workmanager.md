@@ -155,3 +155,14 @@ select_image.setOnClickListener{
 <img src=".assets/234.jpg">
 
 <img src=".assets/235.jpg">
+
+## Content Provider
+
+- Possui 6 métodos a serem implementados
+
+  - **query()** - Método que paga dados de uma tabela
+  - **insert()** - Método para inserir um novo dado em uma tabela
+  - **update()** - Método para atualizar um dados existente
+  - **delete()** - Método para deletar um dado existente.
+  - **getType()** - Retorna o tipo MIME de um determinado dado
+  - **onCreate()** - Inicializador do provedor
