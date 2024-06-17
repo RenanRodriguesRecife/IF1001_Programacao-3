@@ -42,3 +42,25 @@ WorkManager.getInstance(this).getWorkInfoByIdLiveData(notificationWorkRequest.id
 <img src=".assets/219.jpg">
 
 <img src=".assets/220.jpg">
+
+- No manifest
+
+```kotlin
+<provider
+  android:name="com.example.contentprovidersinandroid.MyContentProvider"
+  android:authorities="com.demo.user.provider"
+  android:enabled="true"
+  android:exported="true"></provider>
+```
+
+## Content Uri
+
+- As informações são acessadas através de uma Uniform resource identifier (Uri)
+
+- Podem ter conteúdo do tipo:
+  - resource
+  - file
+  - content
+  - data
+ 
+  
