@@ -30,15 +30,15 @@
 
 - É a requisição que queremos enviar
 
-<img src=".assets/">
+<img src=".assets/236.jpg">
 
 ## JSON
 
 - Utilizado para estruturar dados em formato de texto e permitir a troca de dados entre aplicações de forma simples, leve e rápida.
 
-<img src=".assets/">
+<img src=".assets/237.jpg">
 
-<img src=".assets/">
+<img src=".assets/238.jpg">
 
 
 ## Colocar dependência
@@ -52,11 +52,11 @@ dependencies{
 }
 ```
 
-<img src=".assets/">
+<img src=".assets/239.jpg">
 
-<img src=".assets/">
+<img src=".assets/240.jpg">
 
-<img src=".assets/">
+<img src=".assets/241.jpg">
 
 
 ```
