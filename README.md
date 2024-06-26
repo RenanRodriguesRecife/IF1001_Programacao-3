@@ -54,3 +54,5 @@ Referências
 Para testar:
 
 https://rb.gy/vw8x8l
+
+avançado: fraquemento, animações...
