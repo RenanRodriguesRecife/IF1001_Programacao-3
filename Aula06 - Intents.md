@@ -62,7 +62,7 @@ obs: No manifest
 
 ```
 <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
-``
+```
 
 ## Intent Implícitas
 
