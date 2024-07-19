@@ -9,7 +9,7 @@
 - As regras de negócio e dados (Model)
 - Usa um mediador (Controller) para conectar o modelo à View
 
-<img scr=".assets/242.jpg">
+<img src=".assets/242.jpg">
 
 ## MVC - Benecícios
 
@@ -23,15 +23,15 @@
    
 ## MVC - Aplicativo simples de lista de tarefas
 
-<img scr=".assets/243.jpg">
+<img src=".assets/243.jpg">
 
-<img scr=".assets/244.jpg">
+<img src=".assets/244.jpg">
 
-<img scr=".assets/245.jpg">
+<img src=".assets/245.jpg">
 
-<img scr=".assets/">
+<img src=".assets/">
 
-<img scr=".assets/">
+<img src=".assets/">
 
 # MVP
 
@@ -44,7 +44,7 @@
 
 ## MVP
 
-<img scr=".assets/">
+<img src=".assets/">
 
 - Comunicação entre View-Presenter e Presenter-Model acontece via interface (também chamado de contrato)
 
@@ -53,13 +53,13 @@
  
 - Model e view não se conhecem de forma alguma!!!
 
-<img scr=".assets/">
+<img src=".assets/">
 
-<img scr=".assets/">
+<img src=".assets/">
 
-<img scr=".assets/">
+<img src=".assets/">
 
-<img scr=".assets/">
+<img src=".assets/">
 
 # MVVM
 
@@ -85,14 +85,14 @@
 
 - Ausência de referências da View no ViewModel, ele não consegue modificar a View diretamente, só indiretamente através de bindings.
 
-<img scr=".assets/">
+<img src=".assets/">
 
-<img scr=".assets/">
+<img src=".assets/">
 
-<img scr=".assets/">
+<img src=".assets/">
 
-<img scr=".assets/">
+<img src=".assets/">
 
-<img scr=".assets/">
+<img src=".assets/">
 
-<img scr=".assets/">
+<img src=".assets/">
