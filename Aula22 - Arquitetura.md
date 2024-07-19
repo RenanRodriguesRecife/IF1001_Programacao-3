@@ -9,7 +9,7 @@
 - As regras de negócio e dados (Model)
 - Usa um mediador (Controller) para conectar o modelo à View
 
-<img scr=".assets/">
+<img scr=".assets/242.jpg">
 
 ## MVC - Benecícios
 
@@ -23,11 +23,11 @@
    
 ## MVC - Aplicativo simples de lista de tarefas
 
-<img scr=".assets/">
+<img scr=".assets/243.jpg">
 
-<img scr=".assets/">
+<img scr=".assets/244.jpg">
 
-<img scr=".assets/">
+<img scr=".assets/245.jpg">
 
 <img scr=".assets/">
 
