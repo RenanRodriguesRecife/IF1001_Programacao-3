@@ -89,14 +89,14 @@
 
 - Ausência de referências da View no ViewModel, ele não consegue modificar a View diretamente, só indiretamente através de bindings.
 
-<img src=".assets/">
+<img src=".assets/253.jpg">
 
-<img src=".assets/">
+<img src=".assets/254.jpg">
 
-<img src=".assets/">
+<img src=".assets/255.jpg">
 
-<img src=".assets/">
+<img src=".assets/256.jpg">
 
-<img src=".assets/">
+<img src=".assets/257.jpg">
 
-<img src=".assets/">
+<img src=".assets/258.jpg">
