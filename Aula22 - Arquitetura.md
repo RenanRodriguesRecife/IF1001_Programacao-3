@@ -29,9 +29,13 @@
 
 <img src=".assets/245.jpg">
 
-<img src=".assets/">
+## MVC - Ache o controlador
 
-<img src=".assets/">
+<img src=".assets/246.jpg">
+
+## MVC - Aplicativo simples de lista de tarefas
+
+<img src=".assets/247.jpg">
 
 # MVP
 
@@ -44,7 +48,7 @@
 
 ## MVP
 
-<img src=".assets/">
+<img src=".assets/248.jpg">
 
 - Comunicação entre View-Presenter e Presenter-Model acontece via interface (também chamado de contrato)
 
@@ -53,13 +57,13 @@
  
 - Model e view não se conhecem de forma alguma!!!
 
-<img src=".assets/">
+<img src=".assets/249.jpg">
 
-<img src=".assets/">
+<img src=".assets/250.jpg">
 
-<img src=".assets/">
+<img src=".assets/251.jpg">
 
-<img src=".assets/">
+<img src=".assets/252.jpg">
 
 # MVVM
 
