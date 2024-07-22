@@ -77,6 +77,7 @@ override fun onRequestPermissionsResult(
       }
 }
 }
+```
 
 ## Solicitando autorização ao usuário - Atividade
 
