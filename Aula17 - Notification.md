@@ -6,7 +6,7 @@ Notifications
 - Reply
 - Image
 
-#Notifications - Tipos
+# Notifications - Tipos
 
 - Aparecem automaticamente para os usuários em diferentes locais e formatos
   - Ícone na barra de status
