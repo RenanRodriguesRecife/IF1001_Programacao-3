@@ -52,6 +52,13 @@ dependencies{
 }
 ```
 
+```kotlin
+
+dependencies{
+  <uses-permission android:name="android.permission.INTERNET"/>
+}
+```
+
 <img src=".assets/239.jpg">
 
 <img src=".assets/240.jpg">
